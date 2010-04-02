@@ -4,11 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title></title>
+    <title>Foo Site</title>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
+        <h1>Foo Site</h1>
         <a style="font-size: 2em;" href="/CrystalQuartzPanel.axd">View CrystalQuartz Panel &rarr;</a>
     </div>
     </form>

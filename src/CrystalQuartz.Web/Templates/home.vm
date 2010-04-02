@@ -2,6 +2,11 @@
 #macro( status $activity )
 	<span class='$activity.Status.ToString().ToLower()'>$activity.Status</span>
 #end
+#macro( statusImage $activity )
+	<span class='$activity.Status.ToString().ToLower()'>
+		<img title='Status: $activity.Status' alt='$activity.Status' src='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.status${activity.Status}.png&type=png'>
+	</span>
+#end
 #macro(date $dateObject)
 	#if ($dateObject == $null)
 		<span class='none'>[none]</span>
@@ -30,7 +35,14 @@
 						</tr>
 						<tr>
 							<th>Status:</th>
-							<td><span class='$data.Status.ToString().ToLower()'>$data.Status</span></td>
+							<td>
+								<span class='$data.Status.ToString().ToLower()'>$data.Status</span>
+								#if ($data.IsStarted)
+									<a href="/CrystalQuartzPanel.axd?command=scheduler-stop">Stop</a>
+								#else
+									<a href="/CrystalQuartzPanel.axd?command=scheduler-start">Start</a>
+								#end
+							</td>
 						</tr>
 					</table>        
 				</div>
@@ -43,14 +55,14 @@
 					No jobs found
 				#each
 					<h2 class='groupHeader'>
-						#status($group)
+						#statusImage($group)
 						$group.Name
 					</h2>
 					
 					#foreach($job in $group.Jobs)
 					#each
 						<div class='job'>
-							<div class='status'>#status($job)</div>
+							<div class='status'>#statusImage($job)</div>
 							<h3>$group.Name &rarr; $job.Name</h3>
 							
 									#foreach($trigger in $job.Triggers)
@@ -72,7 +84,7 @@
 									#each
 									<tr>
 										<td>$trigger.Name</td>
-										<td>#status($trigger)</td>
+										<td>#statusImage($trigger)</td>
 										<td>$trigger.StartDate</td>
 										<td>
 											#set($date = $trigger.EndDate)

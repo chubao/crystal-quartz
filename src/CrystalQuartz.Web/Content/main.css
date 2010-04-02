@@ -83,6 +83,11 @@ H2 .started, H2 .active, H2 .paused, H2 .stopped, H2.none
 	color: #CCCCCC;
 }
 
+DIV.none 
+{
+	padding: 5px;
+}
+
 /* Lobs Container */
 #jobsContainer
 {
