@@ -1,0 +1,136 @@
+﻿p, div, html, body, img, h1, h2, h3, h4, h5, h6
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: Verdana,Helvetica,Sans-Serif;
+	font-size: 80%;
+	color: #333333;
+}
+
+#mainContent, #mainHeader
+{
+	margin: 0 auto;
+	width: 960px;
+}
+
+#mainHeader
+{
+	margin-top: 2em;
+}
+
+#mainHeader A
+{
+	float: right;
+}
+
+.simplePanel
+{
+	border: 1px solid #666666;
+	margin-top: 2em;
+}
+
+H2
+{
+	background: #666666 url("/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.headerBg.png&type=png");
+	color: #FFFFFF;
+	margin: 0;
+	padding: 5px;
+	border-bottom: 1px solid #666666;
+	font-weight: normal;
+}
+
+.simplePanel DIV
+{
+	margin: 1em;
+}
+
+/* Status */
+
+H2 .started, H2 .active, H2 .paused, H2 .stopped, H2.none 
+{
+	float: right;
+	margin-right: 6px;
+	font-size: 0.7em;
+	padding: 3px;
+}
+
+.started, .active
+{
+	color: #68A00B;
+}
+
+.paused 
+{
+	color: #FF9900;
+}
+
+.stopped
+{
+	color: #CC6666;
+}
+
+.complete 
+{
+	color: #666666;
+}
+
+.none 
+{
+	color: #CCCCCC;
+}
+
+/* Lobs Container */
+#jobsContainer
+{
+	margin-top: 1em;
+}
+
+#jobsContainer H2.groupHeader
+{
+	margin-top: 1em;
+}
+
+#jobsContainer .job
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+	margin: 10px 0 0;
+	border: 2px solid #EEEEEE;
+}
+
+#jobsContainer .job H3
+{
+	background: none repeat scroll 0 0 #EEEEEE;
+	color: #598ECF;
+	padding: 2px 5px 5px;
+	font-weight: normal;
+}
+
+#jobsContainer .status
+{
+	float: right;
+	margin-right: 10px;
+	padding: 3px;
+}
+
+.job TABLE
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.job TABLE TH, .job TABLE TD
+{
+	font-size: 0.8em;
+	text-align: left;
+	font-size: 0.85em;
+	padding: 3px;
+}
+
+.job TABLE TD
+{
+	border-top: 1px solid #EEEEEE;
+}

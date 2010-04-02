@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+#macro( status $activity )
+	<span class='$activity.Status.ToString().ToLower()'>$activity.Status</span>
+#end
+#macro(date $dateObject)
+	#if ($dateObject == $null)
+		<span class='none'>[none]</span>
+	#else
+		$dateObject
+	#end
+#end
+<html xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <title>CrystalQuartz Panel</title>
+        <link href='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.main.css&type=css' rel='stylesheet' type='text/css' />
+    </head>
+    <body>
+        <div id='mainHeader'>
+            <a href='/'>&larr; return to the site</a>
+            <h1>CrystalQuartz Panel</h1>
+        </div>
+        <div id='mainContent'>
+            <div id='schedulerProperties' class='simplePanel'>
+				<h2>Scheduler properties</h2>
+				<div class='primary'>
+					<table>
+						<tr>
+							<th>Name:</th>
+							<td>$data.Name</td>
+						</tr>
+						<tr>
+							<th>Status:</th>
+							<td><span class='$data.Status.ToString().ToLower()'>$data.Status</span></td>
+						</tr>
+					</table>        
+				</div>
+				<div class='secondary'></div>
+			</div>
+			
+			<div id='jobsContainer'>
+				#foreach($group in $data.JobGroups)
+				#nodata
+					No jobs found
+				#each
+					<h2 class='groupHeader'>
+						#status($group)
+						$group.Name
+					</h2>
+					
+					#foreach($job in $group.Jobs)
+					#each
+						<div class='job'>
+							<div class='status'>#status($job)</div>
+							<h3>$group.Name &rarr; $job.Name</h3>
+							
+									#foreach($trigger in $job.Triggers)
+									#beforeall
+									<table>
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Status</th>
+												<th>Start date</th>
+												<th>End date</th>
+												<th>Previous fire date</th>
+												<th>Next fire date</th>
+											</tr>
+										</thead>
+										<tbody>
+									#nodata
+									<div class='none'>No active triggers</div>
+									#each
+									<tr>
+										<td>$trigger.Name</td>
+										<td>#status($trigger)</td>
+										<td>$trigger.StartDate</td>
+										<td>
+											#set($date = $trigger.EndDate)
+											#date($date)
+										</td>
+										<td>
+											#set($date = $trigger.PreviousFireDate)
+											#date($date)
+										</td>
+										<td>
+											#set($date = $trigger.NextFireDate)
+											#date($date)
+										</td>
+									</tr>
+									#afterall
+										</tbody>
+									</table>	
+									#end
+						</div>		
+					#end
+				#end
+			</div>
+        </div>
+    </body>
+</html>
