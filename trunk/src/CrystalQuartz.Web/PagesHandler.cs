@@ -13,11 +13,14 @@ namespace CrystalQuartz.Web
 
         private static readonly ISchedulerDataProvider SchedulerDataProvider;
 
+        private static readonly ISchedulerProvider SchedulerProvider;
+
         static PagesHandler()
         {
             ViewEngine = new VelocityViewEngine();    
             ViewEngine.Init();
-            SchedulerDataProvider = new DefaultSchedulerDataProvider(Configuration.ConfigUtils.SchedulerProvider);
+            SchedulerProvider = Configuration.ConfigUtils.SchedulerProvider;
+            SchedulerDataProvider = new DefaultSchedulerDataProvider(SchedulerProvider);
         }
 
         public PagesHandler() : base(GetProcessors())
@@ -29,6 +32,12 @@ namespace CrystalQuartz.Web
             return new List<IRequestHandler>
                        {
                            new FileRequestProcessor(),
+                           new DefaultRequestHandler(
+                               new SingleParamRequestMatcher("command", "scheduler-start"),
+                               new StartSchedulerFiller(SchedulerProvider)),
+                           new DefaultRequestHandler(
+                               new SingleParamRequestMatcher("command", "scheduler-stop"),
+                               new StopSchedulerFiller(SchedulerProvider)),
                            new DefaultRequestHandler(
                                new CatchAllRequestMatcher(),
                                new HomeFiller(ViewEngine, SchedulerDataProvider))        

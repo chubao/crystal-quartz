@@ -35,6 +35,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\libs\NVelocity\NVelocity.dll</HintPath>
     </Reference>
+    <Reference Include="Quartz, Version=1.0.2.2, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\Quartz.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
@@ -58,8 +62,10 @@
     <Compile Include="Configuration\CrystalQuartzConfigurationGroup.cs" />
     <Compile Include="Configuration\ProviderSectionHandler.cs" />
     <Compile Include="FrontController\DefaultRequestHandler.cs" />
+    <Compile Include="FrontController\ICommand.cs" />
     <Compile Include="FrontController\RequestMatching\CatchAllRequestMatcher.cs" />
     <Compile Include="FrontController\RequestMatching\IRequestMatcher.cs" />
+    <Compile Include="FrontController\RequestMatching\SingleParamRequestMatcher.cs" />
     <Compile Include="FrontController\ResponseFilling\DefaultResponseFiller.cs" />
     <Compile Include="FrontController\ResponseFilling\IResponseFiller.cs" />
     <Compile Include="FrontController\ResponseFilling\ViewEngineResponseFiller.cs" />
@@ -72,6 +78,8 @@
     <Compile Include="Processors\FileRequestProcessor.cs" />
     <Compile Include="Processors\HomeFiller.cs" />
     <Compile Include="Processors\MasterContentRequestProcessor.cs" />
+    <Compile Include="Processors\StartSchedulerFiller.cs" />
+    <Compile Include="Processors\StopSchedulerFiller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +105,15 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Templates\home.vm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\Images\statusActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\Images\statusPaused.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\Images\statusComplete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

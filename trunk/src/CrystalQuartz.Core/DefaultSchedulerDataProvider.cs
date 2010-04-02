@@ -23,7 +23,6 @@ namespace CrystalQuartz.Core
                 return new SchedulerData
                            {
                                Name = scheduler.SchedulerName,
-                               IsStarted = scheduler.IsStarted,
                                JobGroups = GetJobGroups(scheduler),
                                TriggerGroups = GetTriggerGroups(scheduler),
                                Status = GetSchedulerStatus(scheduler)

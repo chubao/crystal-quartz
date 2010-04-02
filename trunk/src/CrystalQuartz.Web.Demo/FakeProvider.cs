@@ -16,7 +16,7 @@ namespace CrystalQuartz.Web.Demo
 
             // get a scheduler
             IScheduler sched = schedFact.GetScheduler();
-            sched.Start();
+            //sched.Start();
 
             // construct job info
             JobDetail jobDetail = new JobDetail("myJob", null, typeof(HelloJob));
