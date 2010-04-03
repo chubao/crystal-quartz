@@ -14,6 +14,7 @@
 		$dateObject
 	#end
 #end
+
 <html xmlns='http://www.w3.org/1999/xhtml'>
     <head>
         <title>CrystalQuartz Panel</title>
@@ -39,7 +40,8 @@
 								<span class='$data.Status.ToString().ToLower()'>$data.Status</span>
 								#if ($data.IsStarted)
 									<a href="/CrystalQuartzPanel.axd?command=scheduler-stop">Stop</a>
-								#else
+								#end
+								#if ($data.CanStart)
 									<a href="/CrystalQuartzPanel.axd?command=scheduler-start">Start</a>
 								#end
 							</td>
@@ -55,14 +57,30 @@
 					No jobs found
 				#each
 					<h2 class='groupHeader'>
-						#statusImage($group)
 						$group.Name
+						<div class='status'>
+							#if ($group.CanPause)
+								<a href="/CrystalQuartzPanel.axd?command=group-pause&group=${group.Name}">Pause all</a> |
+							#end
+							#if ($group.CanStart)
+								<a href="/CrystalQuartzPanel.axd?command=group-resume&group=${group.Name}">Resume all</a> |
+							#end
+							#statusImage($group)
+						</div>
 					</h2>
 					
 					#foreach($job in $group.Jobs)
 					#each
 						<div class='job'>
-							<div class='status'>#statusImage($job)</div>
+							<div class='status'>
+								#if ($job.CanPause)
+									<a href="/CrystalQuartzPanel.axd?command=job-pause&job=${job.Name}&group=${group.Name}">Pause all</a> |
+								#end
+								#if ($job.CanStart)
+									<a href="/CrystalQuartzPanel.axd?command=job-resume&job=${job.Name}&group=${group.Name}">Resume all</a> |
+								#end
+								#statusImage($job)
+							</div>
 							<h3>$group.Name &rarr; $job.Name</h3>
 							
 									#foreach($trigger in $job.Triggers)
@@ -76,6 +94,7 @@
 												<th>End date</th>
 												<th>Previous fire date</th>
 												<th>Next fire date</th>
+												<th></th>
 											</tr>
 										</thead>
 										<tbody>
@@ -84,7 +103,9 @@
 									#each
 									<tr>
 										<td>$trigger.Name</td>
-										<td>#statusImage($trigger)</td>
+										<td>
+											#statusImage($trigger)
+										</td>
 										<td>$trigger.StartDate</td>
 										<td>
 											#set($date = $trigger.EndDate)
@@ -97,6 +118,14 @@
 										<td>
 											#set($date = $trigger.NextFireDate)
 											#date($date)
+										</td>
+										<td>
+											#if ($trigger.CanPause)
+												<a href="/CrystalQuartzPanel.axd?command=trigger-pause&trigger=${trigger.Name}&group=${group.Name}">Pause</a>
+											#end
+											#if ($trigger.CanStart)
+												<a href="/CrystalQuartzPanel.axd?command=trigger-resume&trigger=${trigger.Name}&group=${group.Name}">Resume</a>
+											#end
 										</td>
 									</tr>
 									#afterall

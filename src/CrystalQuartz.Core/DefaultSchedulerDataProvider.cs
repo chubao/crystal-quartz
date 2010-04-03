@@ -26,23 +26,28 @@ namespace CrystalQuartz.Core
                                JobGroups = GetJobGroups(scheduler),
                                TriggerGroups = GetTriggerGroups(scheduler),
                                Status = GetSchedulerStatus(scheduler)
-                             };
+                           };
             }
         }
 
         public SchedulerStatus GetSchedulerStatus(IScheduler scheduler)
         {
+            if (scheduler.IsShutdown)
+            {
+                return SchedulerStatus.Shutdown;
+            }
+
             if (scheduler.JobGroupNames == null || scheduler.JobGroupNames.Length == 0)
             {
                 return SchedulerStatus.Empty;
             }
 
-            if ((!scheduler.IsStarted) || scheduler.IsShutdown)
+            if (scheduler.IsStarted)
             {
-                return SchedulerStatus.Stopped;
+                return SchedulerStatus.Started;
             }
 
-            return SchedulerStatus.Started;
+            return SchedulerStatus.NotStarted;
         }
 
         private ActivityStatus GetTriggerGroupStatus(string groupName, IScheduler scheduler)
@@ -72,7 +77,12 @@ namespace CrystalQuartz.Core
                 return ActivityStatus.Paused;
             }
 
-            return ActivityStatus.Active;
+            if (triggers.All(t => GetTriggerStatus(t, scheduler) == ActivityStatus.Active))
+            {
+                return ActivityStatus.Active;
+            }
+
+            return ActivityStatus.Mixed;
         }
 
         private ActivityStatus GetTriggerStatus(string triggerName, string triggerGroup, IScheduler scheduler)
@@ -97,23 +107,32 @@ namespace CrystalQuartz.Core
         private IList<TriggerGroupData> GetTriggerGroups(IScheduler scheduler)
         {
             var result = new List<TriggerGroupData>();
-            foreach (var groupName in scheduler.TriggerGroupNames)
+            if (!scheduler.IsShutdown)
             {
-                result.Add(new TriggerGroupData(groupName, GetTriggerGroupStatus(groupName, scheduler)));
+                foreach (var groupName in scheduler.TriggerGroupNames)
+                {
+                    result.Add(new TriggerGroupData(groupName, GetTriggerGroupStatus(groupName, scheduler)));
+                }
             }
+
             return result;
         }
 
         private IList<JobGroupData> GetJobGroups(IScheduler scheduler)
         {
             var result = new List<JobGroupData>();
-            foreach (var groupName in scheduler.JobGroupNames)
+
+            if (!scheduler.IsShutdown)
             {
-                result.Add(new JobGroupData(
-                    groupName, 
-                    GetJobs(scheduler, groupName),
-                    GetJobGroupStatus(groupName, scheduler)));
+                foreach (var groupName in scheduler.JobGroupNames)
+                {
+                    result.Add(new JobGroupData(
+                        groupName,
+                        GetJobs(scheduler, groupName),
+                        GetJobGroupStatus(groupName, scheduler)));
+                }
             }
+
             return result;
         }
 
@@ -123,7 +142,7 @@ namespace CrystalQuartz.Core
             foreach (var jobName in scheduler.GetJobNames(groupName))
             {
                 result.Add(new JobData(
-                    jobName, 
+                    jobName,
                     GetTriggers(scheduler, jobName),
                     GetJobStatus(jobName, groupName, scheduler)));
             }
@@ -145,10 +164,10 @@ namespace CrystalQuartz.Core
                     result.Add(data);
                 }
             }
-            
+
             return result;
         }
 
-        
+
     }
 }

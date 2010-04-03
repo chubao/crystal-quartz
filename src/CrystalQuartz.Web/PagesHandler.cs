@@ -17,31 +17,50 @@ namespace CrystalQuartz.Web
 
         static PagesHandler()
         {
-            ViewEngine = new VelocityViewEngine();    
+            ViewEngine = new VelocityViewEngine();
             ViewEngine.Init();
             SchedulerProvider = Configuration.ConfigUtils.SchedulerProvider;
             SchedulerDataProvider = new DefaultSchedulerDataProvider(SchedulerProvider);
         }
 
-        public PagesHandler() : base(GetProcessors())
+        public PagesHandler()
+            : base(GetProcessors())
         {
         }
 
         private static IList<IRequestHandler> GetProcessors()
         {
             return new List<IRequestHandler>
-                       {
-                           new FileRequestProcessor(),
-                           new DefaultRequestHandler(
-                               new SingleParamRequestMatcher("command", "scheduler-start"),
-                               new StartSchedulerFiller(SchedulerProvider)),
-                           new DefaultRequestHandler(
-                               new SingleParamRequestMatcher("command", "scheduler-stop"),
-                               new StopSchedulerFiller(SchedulerProvider)),
-                           new DefaultRequestHandler(
-                               new CatchAllRequestMatcher(),
-                               new HomeFiller(ViewEngine, SchedulerDataProvider))        
-                       };
+               {
+                   new FileRequestProcessor(),
+                   new DefaultRequestHandler(
+                       new SingleParamRequestMatcher("command", "scheduler-start"),
+                       new StartSchedulerFiller(SchedulerProvider)),
+                   new DefaultRequestHandler(
+                       new SingleParamRequestMatcher("command", "scheduler-stop"),
+                       new StopSchedulerFiller(SchedulerProvider)),
+                   new DefaultRequestHandler(
+                       new SingleParamRequestMatcher("command", "job-pause"),
+                       new PauseJobFiller(SchedulerProvider)),
+                   new DefaultRequestHandler(
+                       new SingleParamRequestMatcher("command", "job-resume"),
+                       new ResumeJobFiller(SchedulerProvider)),
+                   new DefaultRequestHandler(
+                       new SingleParamRequestMatcher("command", "trigger-pause"),
+                       new PauseTriggerFiller(SchedulerProvider)),
+                   new DefaultRequestHandler(
+                       new SingleParamRequestMatcher("command", "trigger-resume"),
+                       new ResumeTriggerFiller(SchedulerProvider)),
+                   new DefaultRequestHandler(
+                       new SingleParamRequestMatcher("command", "group-pause"),
+                       new PauseGroupFiller(SchedulerProvider)),
+                   new DefaultRequestHandler(
+                       new SingleParamRequestMatcher("command", "group-resume"),
+                       new ResumeGroupFiller(SchedulerProvider)),
+                   new DefaultRequestHandler(
+                       new CatchAllRequestMatcher(),
+                       new HomeFiller(ViewEngine, SchedulerDataProvider))        
+               };
         }
     }
 }

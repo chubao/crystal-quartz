@@ -11,6 +11,11 @@ body
 	color: #333333;
 }
 
+A 
+{
+	color: #666666;
+}
+
 #mainContent, #mainHeader
 {
 	margin: 0 auto;
@@ -58,6 +63,16 @@ H2 .started, H2 .active, H2 .paused, H2 .stopped, H2.none
 	padding: 3px;
 }
 
+.started IMG,
+.active IMG,
+.paused IMG,
+.stopped IMG,
+.complete IMG,
+.none IMG
+{
+	vertical-align: middle;
+}
+
 .started, .active
 {
 	color: #68A00B;
@@ -97,6 +112,17 @@ DIV.none
 #jobsContainer H2.groupHeader
 {
 	margin-top: 1em;
+}
+
+#jobsContainer H2.groupHeader DIV.status A
+{
+	color: #FFFFFF;
+}
+
+#jobsContainer H2.groupHeader DIV.status 
+{
+	color: #FFFFFF;
+	font-size: 0.7em;
 }
 
 #jobsContainer .job

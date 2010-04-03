@@ -78,6 +78,12 @@
     <Compile Include="Processors\FileRequestProcessor.cs" />
     <Compile Include="Processors\HomeFiller.cs" />
     <Compile Include="Processors\MasterContentRequestProcessor.cs" />
+    <Compile Include="Processors\PauseGroupFiller.cs" />
+    <Compile Include="Processors\PauseJobFiller.cs" />
+    <Compile Include="Processors\PauseTriggerFiller.cs" />
+    <Compile Include="Processors\ResumeGroupFiller.cs" />
+    <Compile Include="Processors\ResumeJobFiller.cs" />
+    <Compile Include="Processors\ResumeTriggerFiller.cs" />
     <Compile Include="Processors\StartSchedulerFiller.cs" />
     <Compile Include="Processors\StopSchedulerFiller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

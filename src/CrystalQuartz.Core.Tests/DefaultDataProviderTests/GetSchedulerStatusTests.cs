@@ -18,7 +18,7 @@ namespace CrystalQuartz.Core.Tests.DefaultDataProviderTests
             Verify(() =>
                    Assert
                        .That(_provider.GetSchedulerStatus(_scheduler),
-                             Is.EqualTo(SchedulerStatus.Stopped)));
+                             Is.EqualTo(SchedulerStatus.NotStarted)));
         }
         
         [Test]
@@ -44,6 +44,17 @@ namespace CrystalQuartz.Core.Tests.DefaultDataProviderTests
                    Assert
                        .That(_provider.GetSchedulerStatus(_scheduler),
                              Is.EqualTo(SchedulerStatus.Started)));
+        }
+        
+        [Test]
+        public void GetSchedulerStatus_SchedulerIsShutdown_ShouldReturnShutdown()
+        {
+            _scheduler.Expect(s => s.IsShutdown).Return(true);
+
+            Verify(() =>
+                   Assert
+                       .That(_provider.GetSchedulerStatus(_scheduler),
+                             Is.EqualTo(SchedulerStatus.Shutdown)));
         }
     }
 }
