@@ -14,6 +14,14 @@ namespace CrystalQuartz.Core.Domain
             }
         }
 
+        public bool CanStart
+        {
+            get
+            {
+                return Status == SchedulerStatus.NotStarted;
+            }
+        }
+
         public IList<JobGroupData> JobGroups { get; set; }
 
         public IList<TriggerGroupData> TriggerGroups { get; set; }

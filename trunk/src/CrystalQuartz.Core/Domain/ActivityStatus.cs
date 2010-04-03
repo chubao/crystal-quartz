@@ -4,6 +4,7 @@ namespace CrystalQuartz.Core.Domain
     {
         Active,
         Paused,
+        Mixed,
         Complete
     }
 }

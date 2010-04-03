@@ -8,5 +8,21 @@ namespace CrystalQuartz.Core.Domain
         }
 
         public ActivityStatus Status { get; private set; }
+
+        public bool CanStart
+        {
+            get
+            {
+                return Status == ActivityStatus.Paused || Status == ActivityStatus.Mixed;
+            }
+        }
+
+        public bool CanPause
+        {
+            get
+            {
+                return Status == ActivityStatus.Active || Status == ActivityStatus.Mixed;
+            }
+        }
     }
 }
