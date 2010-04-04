@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="DefaultSchedulerDataProvider.cs" />
     <Compile Include="Domain\Activity.cs" />
+    <Compile Include="Domain\ActivityNode.cs" />
     <Compile Include="Domain\ActivityStatus.cs" />
     <Compile Include="Domain\JobGroupData.cs" />
     <Compile Include="Domain\SchedulerStatus.cs" />

@@ -6,6 +6,8 @@ namespace CrystalQuartz.Core.Domain
     {
         public string Name { get; set; }
 
+        public string InstanceId { get; set; }
+
         public bool IsStarted
         {
             get
@@ -19,6 +21,14 @@ namespace CrystalQuartz.Core.Domain
             get
             {
                 return Status == SchedulerStatus.NotStarted;
+            }
+        }
+
+        public bool CanShutdown
+        {
+            get
+            {
+                return Status != SchedulerStatus.Shutdown;
             }
         }
 
