@@ -32,10 +32,17 @@ namespace CrystalQuartz.Core
 
         public JobDetailsData GetJobDetailsData(string name, string group)
         {
-            var job = _schedulerProvider.Scheduler.GetJobDetail(name, group);
+            var scheduler = _schedulerProvider.Scheduler;
+
+            if (scheduler.IsShutdown)
+            {
+                return null;
+            }
+
+            var job = scheduler.GetJobDetail(name, group);
             var detailsData = new JobDetailsData
                            {
-                               PrimaryData = GetJobData(_schedulerProvider.Scheduler, name, group)
+                               PrimaryData = GetJobData(scheduler, name, group)
                            };
             foreach (var key in job.JobDataMap.Keys)
             {

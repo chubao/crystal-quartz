@@ -16,7 +16,7 @@ namespace CrystalQuartz.Web.Processors
         public void FillResponse(HttpResponseBase response, HttpContextBase context)
         {
             _schedulerProvider.Scheduler.Start();
-            response.Redirect("/CrystalQuartzPanel.axd");
+            response.Redirect(context.Request.UrlReferrer.OriginalString);
         }
     }
 }

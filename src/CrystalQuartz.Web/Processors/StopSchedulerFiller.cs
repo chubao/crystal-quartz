@@ -1,6 +1,5 @@
 namespace CrystalQuartz.Web.Processors
 {
-    using System;
     using System.Web;
     using Core;
     using FrontController.ResponseFilling;
