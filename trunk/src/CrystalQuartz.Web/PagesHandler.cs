@@ -37,6 +37,9 @@ namespace CrystalQuartz.Web
                        new SingleParamRequestMatcher("command", "scheduler-start"),
                        new StartSchedulerFiller(SchedulerProvider)),
                    new DefaultRequestHandler(
+                       new SingleParamRequestMatcher("page", "job"),
+                       new JobFiller(ViewEngine, SchedulerDataProvider)),
+                   new DefaultRequestHandler(
                        new SingleParamRequestMatcher("command", "scheduler-stop"),
                        new StopSchedulerFiller(SchedulerProvider)),
                    new DefaultRequestHandler(

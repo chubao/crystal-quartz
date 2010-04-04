@@ -1,18 +1,17 @@
 ﻿<div class='job'>
 	<div class='status'>
 		#if ($job.CanPause)
-			<a href="/CrystalQuartzPanel.axd?command=job-pause&job=${job.Name}&group=${group.Name}">Pause all</a> |
+			<a href="/CrystalQuartzPanel.axd?command=job-pause&job=${job.Name}&group=${job.GroupName}">Pause all</a> |
 		#end
 		#if ($job.CanStart)
-			<a href="/CrystalQuartzPanel.axd?command=job-resume&job=${job.Name}&group=${group.Name}">Resume all</a> |
+			<a href="/CrystalQuartzPanel.axd?command=job-resume&job=${job.Name}&group=${job.GroupName}">Resume all</a> |
 		#end
 		#statusImage($job)
 	</div>
-	<h3>$group.Name &rarr; $job.Name</h3>
-	
+	<h3><a href='/CrystalQuartzPanel.axd?page=job&job=${job.Name}&group=${job.GroupName}'>$job.Name</a></h3>
 			#foreach($trigger in $job.Triggers)
 			#beforeall
-			<table>
+			<table class="data">
 				<thead>
 					<tr>
 						<th>Name</th>
@@ -48,10 +47,10 @@
 				</td>
 				<td>
 					#if ($trigger.CanPause)
-						<a href="/CrystalQuartzPanel.axd?command=trigger-pause&trigger=${trigger.Name}&group=${group.Name}">Pause</a>
+						<a href="/CrystalQuartzPanel.axd?command=trigger-pause&trigger=${trigger.Name}&group=${job.GroupName}">Pause</a>
 					#end
 					#if ($trigger.CanStart)
-						<a href="/CrystalQuartzPanel.axd?command=trigger-resume&trigger=${trigger.Name}&group=${group.Name}">Resume</a>
+						<a href="/CrystalQuartzPanel.axd?command=trigger-resume&trigger=${trigger.Name}&group=${job.GroupName}">Resume</a>
 					#end
 				</td>
 			</tr>

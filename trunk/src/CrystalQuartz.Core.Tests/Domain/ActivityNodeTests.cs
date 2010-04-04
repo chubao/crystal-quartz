@@ -48,8 +48,7 @@ namespace CrystalQuartz.Core.Tests.Domain
             Assert.That(GetActivityStatus(new List<Activity>
                                               {
                                                   new Activity("ch1", ActivityStatus.Active),
-                                                  new Activity("ch2", ActivityStatus.Active),
-                                                  new Activity("ch3", ActivityStatus.Active)
+                                                  new Activity("ch2", ActivityStatus.Active)
                                               }), Is.EqualTo(ActivityStatus.Active));
         }
 
@@ -62,6 +61,27 @@ namespace CrystalQuartz.Core.Tests.Domain
                                                   new Activity("ch2", ActivityStatus.Paused),
                                                   new Activity("ch3", ActivityStatus.Paused)
                                               }), Is.EqualTo(ActivityStatus.Paused));
+        }
+
+        [Test]
+        public void Init_SomeChildrenHaveSameStatusAndSomeChildrenComplete_ShouldIgnoreCompleteActivitiesAndSetStatus()
+        {
+            Assert.That(GetActivityStatus(new List<Activity>
+                                              {
+                                                  new Activity("ch1", ActivityStatus.Paused),
+                                                  new Activity("ch2", ActivityStatus.Paused),
+                                                  new Activity("ch3", ActivityStatus.Paused),
+                                                  new Activity("ch3", ActivityStatus.Complete),
+                                                  new Activity("ch3", ActivityStatus.Complete)
+                                              }), Is.EqualTo(ActivityStatus.Paused));
+            Assert.That(GetActivityStatus(new List<Activity>
+                                              {
+                                                  new Activity("ch1", ActivityStatus.Active),
+                                                  new Activity("ch2", ActivityStatus.Active),
+                                                  new Activity("ch3", ActivityStatus.Active),
+                                                  new Activity("ch3", ActivityStatus.Complete),
+                                                  new Activity("ch3", ActivityStatus.Complete)
+                                              }), Is.EqualTo(ActivityStatus.Active));
         }
 
         [Test]

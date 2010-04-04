@@ -4,12 +4,15 @@ namespace CrystalQuartz.Core.Domain
 
     public class JobData : ActivityNode<TriggerData>
     {
-        public JobData(string name, IList<TriggerData> triggers): base(name)
+        public JobData(string name, string group, IList<TriggerData> triggers): base(name)
         {
             Triggers = triggers;
+            GroupName = group;
         }
 
         public IList<TriggerData> Triggers { get; private set; }
+
+        public string GroupName { get; private set; }
 
         public bool HaveTriggers
         {

@@ -1,5 +1,6 @@
 namespace CrystalQuartz.Core
 {
+    using System;
     using System.Collections.Generic;
     using Domain;
     using Quartz;
@@ -29,6 +30,26 @@ namespace CrystalQuartz.Core
             }
         }
 
+        public JobDetailsData GetJobDetailsData(string name, string group)
+        {
+            var job = _schedulerProvider.Scheduler.GetJobDetail(name, group);
+            var detailsData = new JobDetailsData
+                           {
+                               PrimaryData = GetJobData(_schedulerProvider.Scheduler, name, group)
+                           };
+            foreach (var key in job.JobDataMap.Keys)
+            {
+                detailsData.JobDataMap.Add(key, job.JobDataMap[key]);
+            }
+            detailsData.JobProperties.Add("Description", job.Description);
+            detailsData.JobProperties.Add("Full name", job.FullName);
+            detailsData.JobProperties.Add("Job type", job.JobType);
+            detailsData.JobProperties.Add("Durable", job.Durable);
+            detailsData.JobProperties.Add("Volatile", job.Volatile);
+            
+            return detailsData;
+        }
+
         public SchedulerStatus GetSchedulerStatus(IScheduler scheduler)
         {
             if (scheduler.IsShutdown)
@@ -48,7 +69,7 @@ namespace CrystalQuartz.Core
 
             return SchedulerStatus.NotStarted;
         }
-        
+
         private static ActivityStatus GetTriggerStatus(string triggerName, string triggerGroup, IScheduler scheduler)
         {
             var state = scheduler.GetTriggerState(triggerName, triggerGroup);
@@ -106,35 +127,36 @@ namespace CrystalQuartz.Core
         private static IList<JobData> GetJobs(IScheduler scheduler, string groupName)
         {
             var result = new List<JobData>();
-            
+
             foreach (var jobName in scheduler.GetJobNames(groupName))
             {
-                var jobData = new JobData(
-                    jobName,
-                    GetTriggers(scheduler, jobName));
-                jobData.Init();
-                result.Add(jobData);
+                result.Add(GetJobData(scheduler, jobName, groupName));
             }
 
             return result;
         }
 
-        private static IList<TriggerData> GetTriggers(IScheduler scheduler, string jobName)
+        private static JobData GetJobData(IScheduler scheduler, string jobName, string group)
+        {
+            var jobData = new JobData(jobName, group, GetTriggers(scheduler, jobName, group));
+            jobData.Init();
+            return jobData;
+        }
+
+        private static IList<TriggerData> GetTriggers(IScheduler scheduler, string jobName, string group)
         {
             var result = new List<TriggerData>();
-            foreach (var groupName in scheduler.TriggerGroupNames)
+
+            foreach (var trigger in scheduler.GetTriggersOfJob(jobName, group))
             {
-                foreach (var trigger in scheduler.GetTriggersOfJob(jobName, groupName))
+                var data = new TriggerData(trigger.Name, GetTriggerStatus(trigger, scheduler))
                 {
-                    var data = new TriggerData(trigger.Name, GetTriggerStatus(trigger, scheduler))
-                    {
-                        StartDate = trigger.StartTimeUtc,
-                        EndDate = trigger.EndTimeUtc,
-                        NextFireDate = trigger.GetNextFireTimeUtc(),
-                        PreviousFireDate = trigger.GetPreviousFireTimeUtc()
-                    };
-                    result.Add(data);
-                }
+                    StartDate = trigger.StartTimeUtc,
+                    EndDate = trigger.EndTimeUtc,
+                    NextFireDate = trigger.GetNextFireTimeUtc(),
+                    PreviousFireDate = trigger.GetPreviousFireTimeUtc()
+                };
+                result.Add(data);
             }
 
             return result;
