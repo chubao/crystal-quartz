@@ -20,8 +20,12 @@ namespace CrystalQuartz.Web.FrontController.ResponseFilling
             }
         }
 
+        protected HttpRequestBase Request { get; private set; }
+
         public void FillResponse(HttpResponseBase response, HttpContextBase context)
         {
+            Request = context.Request;
+
             response.ContentType = ContentType;
             response.StatusCode = StatusCode;
             InternalFillResponse(response, context);

@@ -8,5 +8,7 @@ namespace CrystalQuartz.Core
     public interface ISchedulerDataProvider
     {
         SchedulerData Data { get; }
+
+        JobDetailsData GetJobDetailsData(string name, string group);
     }
 }

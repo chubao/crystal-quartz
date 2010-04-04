@@ -15,7 +15,7 @@ namespace CrystalQuartz.Core.Domain
 
         public override void Init()
         {
-            base.Init();
+            base.Init(); 
 
             if (ChildrenActivities == null || ChildrenActivities.Count == 0)
             {
@@ -25,11 +25,11 @@ namespace CrystalQuartz.Core.Domain
             {
                 Status = ActivityStatus.Complete;
             }
-            else if (ChildrenActivities.All(a => a.Status == ActivityStatus.Active))
+            else if (ChildrenActivities.All(a => a.Status == ActivityStatus.Active || a.Status == ActivityStatus.Complete))
             {
                 Status = ActivityStatus.Active;
             }
-            else if (ChildrenActivities.All(a => a.Status == ActivityStatus.Paused))
+            else if (ChildrenActivities.All(a => a.Status == ActivityStatus.Paused || a.Status == ActivityStatus.Complete))
             {
                 Status = ActivityStatus.Paused;
             }

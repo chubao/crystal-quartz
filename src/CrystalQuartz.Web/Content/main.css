@@ -55,7 +55,13 @@ H2
 
 /* Status */
 
-H2 .started, H2 .active, H2 .paused, H2 .stopped, H2.none, H2 .mixed, H2.complete
+H2 .started, 
+H2 .active, 
+H2 .paused, 
+H2 .stopped, 
+H2 .none, 
+H2 .mixed, 
+H2 .complete
 {
 	float: right;
 	margin-right: 0;
@@ -127,17 +133,17 @@ DIV.none
 	margin-right: 0;
 }
 
-#jobsContainer .job
+#jobsContainer .job, #jobDataMap, #jobProperties
 {
 	background: none repeat scroll 0 0 #FFFFFF;
 	margin: 10px 0 0;
 	border: 2px solid #EEEEEE;
 }
 
-#jobsContainer .job H3
+H3
 {
 	background: none repeat scroll 0 0 #EEEEEE;
-	color: #598ECF;
+	color: #666666;
 	padding: 2px 5px 5px;
 	font-weight: normal;
 }
@@ -148,13 +154,14 @@ DIV.none
 	padding: 3px;
 }
 
-.job TABLE
+TABLE.data
 {
 	width: 100%;
 	border-collapse: collapse;
+	
 }
 
-.job TABLE TH, .job TABLE TD
+TABLE.data TH, TABLE.data TD
 {
 	font-size: 0.8em;
 	text-align: left;
@@ -162,7 +169,7 @@ DIV.none
 	padding: 3px;
 }
 
-.job TABLE TD
+TABLE.data TD
 {
 	border-top: 1px solid #EEEEEE;
 }
@@ -171,4 +178,21 @@ DIV.none
 {
 	text-align: right;
 	padding-right: 10px;
+}
+
+/* Data values */
+
+span.string 
+{
+	color: #A31515;
+}
+
+span.boolean
+{
+	color: #0000FF;
+}
+
+span.runtimetype
+{
+	color: #2B91AF;
 }

@@ -47,6 +47,10 @@ namespace CrystalQuartz.Web.Demo
             // construct job info
             JobDetail jobDetail4 = new JobDetail("myJob4", null, typeof(HelloJob));
             jobDetail4.Group = "MyOwnGroup";
+            jobDetail4.JobDataMap.Add("key1", "value1");
+            jobDetail4.JobDataMap.Add("key2", "value2");
+            jobDetail4.JobDataMap.Add("key3", 1l);
+            jobDetail4.JobDataMap.Add("key4", 1d);
             // fire every hour
             Trigger trigger4 = TriggerUtils.MakeMinutelyTrigger(1, 1);
             // start on the next even hour
