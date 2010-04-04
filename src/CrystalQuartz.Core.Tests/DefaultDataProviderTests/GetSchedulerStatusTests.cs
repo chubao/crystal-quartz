@@ -1,5 +1,6 @@
 namespace CrystalQuartz.Core.Tests.DefaultDataProviderTests
 {
+    using Core.Domain;
     using Domain;
     using NUnit.Framework;
     using NUnit.Framework.SyntaxHelpers;

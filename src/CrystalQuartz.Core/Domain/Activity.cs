@@ -7,7 +7,13 @@ namespace CrystalQuartz.Core.Domain
             Status = status;
         }
 
-        public ActivityStatus Status { get; private set; }
+        public Activity(string name) : base(name)
+        {
+        }
+
+        public virtual void Init() {}
+
+        public ActivityStatus Status { get; protected set; }
 
         public bool CanStart
         {

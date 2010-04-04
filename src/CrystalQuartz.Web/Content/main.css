@@ -43,7 +43,7 @@ H2
 	background: #666666 url("/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.headerBg.png&type=png");
 	color: #FFFFFF;
 	margin: 0;
-	padding: 5px;
+	padding: 5px 0 5px 5px;
 	border-bottom: 1px solid #666666;
 	font-weight: normal;
 }
@@ -55,10 +55,10 @@ H2
 
 /* Status */
 
-H2 .started, H2 .active, H2 .paused, H2 .stopped, H2.none 
+H2 .started, H2 .active, H2 .paused, H2 .stopped, H2.none, H2 .mixed, H2.complete
 {
 	float: right;
-	margin-right: 6px;
+	margin-right: 0;
 	font-size: 0.7em;
 	padding: 3px;
 }
@@ -68,7 +68,8 @@ H2 .started, H2 .active, H2 .paused, H2 .stopped, H2.none
 .paused IMG,
 .stopped IMG,
 .complete IMG,
-.none IMG
+.none IMG,
+.mixed IMG
 {
 	vertical-align: middle;
 }
@@ -123,6 +124,7 @@ DIV.none
 {
 	color: #FFFFFF;
 	font-size: 0.7em;
+	margin-right: 0;
 }
 
 #jobsContainer .job
@@ -143,7 +145,6 @@ DIV.none
 #jobsContainer .status
 {
 	float: right;
-	margin-right: 10px;
 	padding: 3px;
 }
 
@@ -164,4 +165,10 @@ DIV.none
 .job TABLE TD
 {
 	border-top: 1px solid #EEEEEE;
+}
+
+#schedulerProperties TABLE TH 
+{
+	text-align: right;
+	padding-right: 10px;
 }

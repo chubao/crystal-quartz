@@ -1,10 +1,18 @@
 namespace CrystalQuartz.Core.Domain
 {
-    public class TriggerGroupData : Activity
+    using System.Collections.Generic;
+
+    public class TriggerGroupData : ActivityNode<TriggerData>
     {
-        public TriggerGroupData(string name, ActivityStatus status)
-            : base(name, status)
+        public TriggerGroupData(string name) : base(name)
         {
+        }
+
+        public IList<TriggerData> Triggers { get; set; }
+
+        protected override IList<TriggerData> ChildrenActivities
+        {
+            get { return Triggers; }
         }
     }
 }

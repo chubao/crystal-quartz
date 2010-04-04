@@ -2,9 +2,9 @@ namespace CrystalQuartz.Core.Domain
 {
     using System.Collections.Generic;
 
-    public class JobData : Activity
+    public class JobData : ActivityNode<TriggerData>
     {
-        public JobData(string name, IList<TriggerData> triggers, ActivityStatus status): base(name, status)
+        public JobData(string name, IList<TriggerData> triggers): base(name)
         {
             Triggers = triggers;
         }
@@ -17,6 +17,11 @@ namespace CrystalQuartz.Core.Domain
             {
                 return Triggers != null && Triggers.Count > 0;
             }
+        }
+
+        protected override IList<TriggerData> ChildrenActivities
+        {
+            get { return Triggers; }
         }
     }
 }
