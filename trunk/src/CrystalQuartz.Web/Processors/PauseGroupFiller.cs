@@ -17,7 +17,7 @@ namespace CrystalQuartz.Web.Processors
         {
             var jobGroup = context.Request.Params["group"];
             _schedulerProvider.Scheduler.PauseJobGroup(jobGroup);
-            response.Redirect("/CrystalQuartzPanel.axd");
+            response.Redirect(context.Request.UrlReferrer.OriginalString);
         }
     }
 }

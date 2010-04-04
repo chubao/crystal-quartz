@@ -21,14 +21,15 @@ namespace CrystalQuartz.Web.Processors
             {
                 return new Dictionary<string, object>
                              {
-                                 {"data", _schedulerDataProvider.Data}
+                                 { "data", _schedulerDataProvider.Data },
+                                 { "mainContent", "home" }
                              };
             }
         }
 
         protected override string ViewName
         {
-            get { return "home"; }
+            get { return "master"; }
         }
     }
 }
