@@ -1,130 +1,65 @@
-﻿<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
-#macro( status $activity )
-	<span class='$activity.Status.ToString().ToLower()'>$activity.Status</span>
-#end
-#macro( statusImage $activity )
-	<span class='$activity.Status.ToString().ToLower()'>
-		<img title='Status: $activity.Status' alt='$activity.Status' src='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.status${activity.Status}.png&type=png'>
-	</span>
-#end
-#macro(date $dateObject)
-	#if ($dateObject == $null)
-		<span class='none'>[none]</span>
-	#else
-		$dateObject
-	#end
-#end
-#macro(dataValue $value)
-    #if($value == $null)
-        <span class='none'>[none]</span>
-    #else
-        <span class='$value.GetType().Name.ToString().ToLower()'>$value</span>
+﻿<div id='jobsContainer'>
+    #set($job = $jobDetails.PrimaryData)
+	#parse("CrystalQuartz.Web.Templates.jobPanel.vm")
+</div>
+
+
+<div id='jobProperties'>
+    <h3>Job properties</h3>
+    #foreach($pair in $jobDetails.JobProperties)
+    #nodata
+    <div class='none'>No entries</div>
+    #beforeall
+    <table class="data">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+    #each
+        <tr>
+            <td>$pair.Key</td>
+            <td>
+                #set($dataValue = ${pair.Value})
+                #dataValue($dataValue)
+            </td>
+        </tr>
+    #afterall
+        </tbody>
+    </table>
     #end
-#end
-<html xmlns='http://www.w3.org/1999/xhtml'>
-    <head>
-        <title>CrystalQuartz Panel</title>
-        <link href='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.main.css&type=css' rel='stylesheet' type='text/css' />
-    </head>
-    <body>
-        <div id='mainHeader'>
-            <a href='/'>&larr; return to the site</a>
-            <h1>CrystalQuartz Panel</h1>
-        </div>
-        <div id='mainContent'>
-            <div id='schedulerProperties' class='simplePanel'>
-				<h2>Scheduler properties</h2>
-				<div class='primary'>
-					<table>
-						<tr>
-							<th>Name:</th>
-							<td>$data.Name</td>
-						</tr>
-						<tr>
-							<th>Status:</th>
-							<td>
-								<span class='$data.Status.ToString().ToLower()'>$data.Status</span>
-								<a href="/CrystalQuartzPanel.axd?command=scheduler-stop">Shutdown</a>
-								#if ($data.CanStart)
-									<a href="/CrystalQuartzPanel.axd?command=scheduler-start">Start</a>
-								#end
-							</td>
-						</tr>
-						<tr>
-							<th>Instance ID:</th>
-							<td>$data.InstanceId</td>
-						</tr>
-					</table>        
-				</div>
-				<div class='secondary'></div>
-			</div>
-			
-			<div id='jobsContainer'>
-			    #set($job = $jobDetails.PrimaryData)
-				#parse("CrystalQuartz.Web.Templates.jobPanel.vm")
-			</div>
-			
-			
-			<div id='jobProperties'>
-			    <h3>Job properties</h3>
-		        #foreach($pair in $jobDetails.JobProperties)
-		        #nodata
-		        <div class='none'>No entries</div>
-		        #beforeall
-		        <table class="data">
-		        <thead>
-		            <tr>
-		                <th>Key</th>
-		                <th>Value</th>
-		            </tr>
-		        </thead>
-		        <tbody>
-		        #each
-		            <tr>
-		                <td>$pair.Key</td>
-		                <td>
-		                    #set($dataValue = ${pair.Value})
-		                    #dataValue($dataValue)
-		                </td>
-		            </tr>
-		        #afterall
-		            </tbody>
-		        </table>
-		        #end
-			</div>
-			
-			<div id='jobDataMap'>
-			    <h3>Job data map</h3>
-		        #foreach($pair in $jobDetails.JobDataMap)
-		        #nodata
-		        <div class='none'>No entries</div>
-		        #beforeall
-		        <table class="data">
-		        <thead>
-		            <tr>
-		                <th>Key</th>
-		                <th>Value</th>
-		                <th>Type</th>
-		            </tr>
-		        </thead>
-		        <tbody>
-		        #each
-		            <tr>
-		                <td>$pair.Key</td>
-		                <td>
-		                    #set($dataValue = ${pair.Value})
-		                    #dataValue($dataValue)
-		                </td>
-		                <td>
-		                    <span class='runtimetype'>$pair.Value.GetType()</span>
-		                </td>
-		            </tr>
-		        #afterall
-		            </tbody>
-		        </table>
-		        #end
-			</div>
-			
-        </div>
-    </body>
-</html>
+</div>
+
+<div id='jobDataMap'>
+    <h3>Job data map</h3>
+    #foreach($pair in $jobDetails.JobDataMap)
+    #nodata
+    <div class='none'>No entries</div>
+    #beforeall
+    <table class="data">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+    #each
+        <tr>
+            <td>$pair.Key</td>
+            <td>
+                #set($dataValue = ${pair.Value})
+                #dataValue($dataValue)
+            </td>
+            <td>
+                <span class='runtimetype'>$pair.Value.GetType()</span>
+            </td>
+        </tr>
+    #afterall
+        </tbody>
+    </table>
+    #end
+</div>
