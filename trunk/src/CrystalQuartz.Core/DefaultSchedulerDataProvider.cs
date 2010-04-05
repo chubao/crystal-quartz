@@ -40,20 +40,27 @@ namespace CrystalQuartz.Core
             }
 
             var job = scheduler.GetJobDetail(name, group);
+            if (job == null)
+            {
+                return null;
+            }
+
             var detailsData = new JobDetailsData
-                           {
-                               PrimaryData = GetJobData(scheduler, name, group)
-                           };
+            {
+               PrimaryData = GetJobData(scheduler, name, group)
+            };
+
             foreach (var key in job.JobDataMap.Keys)
             {
                 detailsData.JobDataMap.Add(key, job.JobDataMap[key]);
             }
+
             detailsData.JobProperties.Add("Description", job.Description);
             detailsData.JobProperties.Add("Full name", job.FullName);
             detailsData.JobProperties.Add("Job type", job.JobType);
             detailsData.JobProperties.Add("Durable", job.Durable);
             detailsData.JobProperties.Add("Volatile", job.Volatile);
-            
+
             return detailsData;
         }
 
@@ -74,7 +81,7 @@ namespace CrystalQuartz.Core
                 return SchedulerStatus.Started;
             }
 
-            return SchedulerStatus.NotStarted;
+            return SchedulerStatus.Ready;
         }
 
         private static ActivityStatus GetTriggerStatus(string triggerName, string triggerGroup, IScheduler scheduler)

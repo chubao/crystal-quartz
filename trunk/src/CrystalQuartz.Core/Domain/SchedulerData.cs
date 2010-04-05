@@ -20,7 +20,7 @@ namespace CrystalQuartz.Core.Domain
         {
             get
             {
-                return Status == SchedulerStatus.NotStarted;
+                return Status == SchedulerStatus.Ready;
             }
         }
 

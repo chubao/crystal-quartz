@@ -140,6 +140,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Content\Images\menu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\Images\shutdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\Images\start.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

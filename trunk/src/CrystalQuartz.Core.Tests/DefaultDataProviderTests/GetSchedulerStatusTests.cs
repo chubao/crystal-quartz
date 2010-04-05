@@ -19,7 +19,7 @@ namespace CrystalQuartz.Core.Tests.DefaultDataProviderTests
             Verify(() =>
                    Assert
                        .That(_provider.GetSchedulerStatus(_scheduler),
-                             Is.EqualTo(SchedulerStatus.NotStarted)));
+                             Is.EqualTo(SchedulerStatus.Ready)));
         }
         
         [Test]

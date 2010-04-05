@@ -69,7 +69,12 @@
         </div>
         <div id='mainContent'>
 			<div id='schedulerProperties' class='simplePanel'>
-				<h2>Scheduler properties</h2>
+				<h2>
+				    Scheduler properties
+				    <div class='status'>
+				        Status: <span class='$data.Status.ToString().ToLower()'>$data.Status</span>
+				    </div>
+				</h2>
 				<div class='primary'>
 					<table>
 						<tr>
@@ -77,25 +82,32 @@
 							<td>$data.Name</td>
 						</tr>
 						<tr>
-							<th>Status:</th>
-							<td>
-								<span class='$data.Status.ToString().ToLower()'>$data.Status</span>
-								
-								#if ($data.CanStart)
-									<a href="/CrystalQuartzPanel.axd?command=scheduler-start">Start</a>
-								#end
-								#if ($data.CanShutdown)
-									<a href="/CrystalQuartzPanel.axd?command=scheduler-stop">Shutdown</a>
-								#end
-							</td>
-						</tr>
-						<tr>
 							<th>Instance ID:</th>
 							<td>$data.InstanceId</td>
 						</tr>
 					</table>        
 				</div>
-				<div class='secondary'></div>
+				<div class='secondary'>
+				    #if($data.CanStart)
+				        <div style='margin: 0 0 10px 0;'>Scheduler not started!</div>
+				    #end
+				    <div>
+				        #if($data.CanStart)
+			                <a class='buttonLink' href="/CrystalQuartzPanel.axd?command=scheduler-start">
+			                    <img alt='' src='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.start.png&type=png' />
+			                    Start scheduler
+			                </a>
+			            #end
+			            #if ($data.CanShutdown)
+							<a class='buttonLink' 
+							   href="/CrystalQuartzPanel.axd?command=scheduler-stop"
+							   onclick="return confirm('Are you sure you want to shutdown scheduler?')">
+							    <img alt='' src='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.shutdown.png&type=png' />
+							    Shutdown
+							</a>
+						#end
+			        </div>
+				</div>
 			</div>
             #parse("CrystalQuartz.Web.Templates.${mainContent}.vm")
         </div>

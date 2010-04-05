@@ -1,8 +1,12 @@
-﻿<div id='jobsContainer'>
+﻿#if ($jobDetails == $null)
+    <div id='jobsContainer'>
+        Job not found. It can be complete or undefined.
+    </div>
+#else
+<div id='jobsContainer'>
     #set($job = $jobDetails.PrimaryData)
 	#parse("CrystalQuartz.Web.Templates.jobPanel.vm")
 </div>
-
 
 <div id='jobProperties'>
     <h3>Job properties</h3>
@@ -63,3 +67,4 @@
     </table>
     #end
 </div>
+#end
