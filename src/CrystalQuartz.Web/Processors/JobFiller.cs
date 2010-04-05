@@ -25,6 +25,7 @@ namespace CrystalQuartz.Web.Processors
                 return new Dictionary<string, object>
                              {
                                  { "data", _schedulerDataProvider.Data },
+                                 { "mainContent", "job" },
                                  { "jobDetails", _schedulerDataProvider.GetJobDetailsData(jobName, jobGroup) }
                              };
             }
@@ -32,7 +33,7 @@ namespace CrystalQuartz.Web.Processors
 
         protected override string ViewName
         {
-            get { return "job"; }
+            get { return "master"; }
         }
     }
 }

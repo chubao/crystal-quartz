@@ -56,7 +56,7 @@ H2
 
 /* Status */
 
-H2 .started, H2 .active, H2 .paused, H2 .stopped, H2 .none, H2 .mixed, H2 .complete
+H2 .started, H2 .active, H2 .paused, H2 .stopped, H2 .mixed, H2 .complete
 {
 	float: right;
 	margin-right: 0;
@@ -109,15 +109,14 @@ DIV.none
 {
 	margin-top: 1em;
 }
-
+/*
 #jobsContainer H2.groupHeader DIV.status A
 {
 	color: #FFFFFF;
 }
-
+*/
 #jobsContainer H2.groupHeader DIV.status
 {
-	color: #FFFFFF;
 	font-size: 0.7em;
 	margin-right: 0;
 }
@@ -126,7 +125,7 @@ DIV.none
 {
 	background: none repeat scroll 0 0 #FFFFFF;
 	margin: 10px 0 0;
-	border: 2px solid #EEEEEE;
+	border: 1px solid #B0B0B0;
 }
 
 H3
@@ -141,6 +140,7 @@ H3
 {
 	float: right;
 	padding: 3px;
+	color: #b0b0b0;
 }
 
 TABLE.data
@@ -157,9 +157,17 @@ TABLE.data TH, TABLE.data TD
 	padding: 3px;
 }
 
+TABLE.data TH
+{
+	background: none repeat scroll 0 0 #E0E0E0;
+	border-bottom: 1px solid #B0B0B0;
+	border-top: 1px solid #B0B0B0;
+}
+
 TABLE.data TD
 {
 	border-top: 1px solid #EEEEEE;
+	border-right: 1px solid #E0E0E0;
 }
 
 #schedulerProperties TABLE TH
@@ -225,4 +233,33 @@ span.runtimetype
 	padding-bottom: 2px;
 	padding-left: 20px;
 	padding-top: 2px;
+}
+
+
+/**/
+
+.menu 
+{
+	position: absolute;
+	visibility: hidden;
+	border: 1px solid #B0B0B0;
+	background: #FFFFFF;
+}
+
+.menu A
+{
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 5px 3px;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+
+}
+
+.menu A:HOVER 
+{
+	background: #EEEEEE;
 }
