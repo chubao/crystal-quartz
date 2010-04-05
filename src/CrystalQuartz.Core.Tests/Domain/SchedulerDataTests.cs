@@ -10,7 +10,7 @@ namespace CrystalQuartz.Core.Tests.Domain
         [Test]
         public void CanStart_NotStarted_ShouldReturnTrue()
         {
-            Assert.That(new SchedulerData{Status = SchedulerStatus.NotStarted}.CanStart);
+            Assert.That(new SchedulerData{Status = SchedulerStatus.Ready}.CanStart);
         }
 
         [Test]
@@ -31,7 +31,7 @@ namespace CrystalQuartz.Core.Tests.Domain
         public void CanShutdown_NotShutdown_ShouldReturnTrue()
         {
             Assert.That(new SchedulerData { Status = SchedulerStatus.Empty }.CanShutdown);
-            Assert.That(new SchedulerData { Status = SchedulerStatus.NotStarted }.CanShutdown);
+            Assert.That(new SchedulerData { Status = SchedulerStatus.Ready }.CanShutdown);
             Assert.That(new SchedulerData { Status = SchedulerStatus.Started }.CanShutdown);
         }
     }

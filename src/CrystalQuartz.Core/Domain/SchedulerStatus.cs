@@ -3,7 +3,7 @@ namespace CrystalQuartz.Core.Domain
     public enum SchedulerStatus
     {
         Empty,
-        NotStarted,
+        Ready,
         Started,
         Shutdown
     }

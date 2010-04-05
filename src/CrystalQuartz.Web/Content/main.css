@@ -2,6 +2,7 @@
 {
 	margin: 0;
 	padding: 0;
+	border: none;
 }
 
 body
@@ -54,9 +55,38 @@ H2
 	margin: 1em;
 }
 
-/* Status */
+/* Scheduler status */
+.empty,
+.ready,
+.started,
+.shutdown
+{
+	padding: 3px;
+	color: #FFFFFF;
+}
 
-H2 .started, H2 .active, H2 .paused, H2 .stopped, H2 .mixed, H2 .complete
+.empty 
+{
+	background: #666666;
+}
+
+.ready 
+{
+	background: #E5D45B;
+}
+
+.started 
+{
+	background: #38C049;
+}
+
+.shutdown
+{
+	background: #666666;
+}
+
+/* Activity status */
+H2 .active, H2 .paused, H2 .stopped, H2 .mixed, H2 .complete
 {
 	float: right;
 	margin-right: 0;
@@ -69,7 +99,7 @@ H2 .started, H2 .active, H2 .paused, H2 .stopped, H2 .mixed, H2 .complete
 	vertical-align: middle;
 }
 
-.started, .active
+.active
 {
 	color: #68A00B;
 }
@@ -115,10 +145,10 @@ DIV.none
 	color: #FFFFFF;
 }
 */
-#jobsContainer H2.groupHeader DIV.status
+H2 DIV.status
 {
 	font-size: 0.7em;
-	margin-right: 0;
+	margin: 0;
 }
 
 #jobsContainer .job, #jobDataMap, #jobProperties
@@ -136,7 +166,7 @@ H3
 	font-weight: normal;
 }
 
-#jobsContainer .status
+#jobsContainer .status, H2 .status
 {
 	float: right;
 	padding: 3px;
@@ -170,10 +200,38 @@ TABLE.data TD
 	border-right: 1px solid #E0E0E0;
 }
 
+#schedulerProperties 
+{
+	overflow: auto;
+}
+
 #schedulerProperties TABLE TH
 {
 	text-align: right;
 	padding-right: 10px;
+}
+
+#schedulerProperties .primary 
+{
+	float: left;
+	width: 400px;
+}
+
+#schedulerProperties .secondary
+{
+	float: left;
+}
+
+#schedulerProperties DIV.status
+{
+	margin-right: 3px;
+	color: #FFFFFF;
+}
+	
+#schedulerProperties .secondary DIV
+{
+	margin: 0 0 10px 0;
+	
 }
 
 /* Main Logo */
@@ -262,4 +320,30 @@ span.runtimetype
 .menu A:HOVER 
 {
 	background: #EEEEEE;
+}
+
+/* Button link */
+A.buttonLink 
+{
+	float: left;
+	display: block;
+	padding: 7px 10px;
+	border: 1px solid #666666;
+	color: #E0E0E0;
+	background: url("/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.headerBg.png&type=png") repeat scroll 0 0 #666666;
+	text-decoration: none;
+	margin-right: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+A.buttonLink:HOVER
+{
+	color: #FFFFFF;
+	background: #666666;
+}
+
+A.buttonLink IMG
+{
+	vertical-align: middle;
 }
