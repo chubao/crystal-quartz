@@ -52,7 +52,6 @@ H2
 
 .simplePanel DIV
 {
-	margin: 1em;
 }
 
 /* Scheduler status */
@@ -61,8 +60,15 @@ H2
 .started,
 .shutdown
 {
-	padding: 3px;
-	color: #FFFFFF;
+	border-color:#666666 #CCCCCC #CCCCCC #666666;
+	border-style:solid;
+	border-width:1px;
+	color:#FFFFFF;
+	float:right;
+	height:10px;
+	padding:3px;
+	width:10px;
+	-moz-border-radius:4px 4px 4px 4px;
 }
 
 .empty 
@@ -215,11 +221,14 @@ TABLE.data TD
 {
 	float: left;
 	width: 400px;
+	margin: 10px;
 }
 
 #schedulerProperties .secondary
 {
 	float: left;
+	margin: 10px 10px 10px 0;
+	width: 528px;
 }
 
 #schedulerProperties DIV.status
@@ -346,4 +355,23 @@ A.buttonLink:HOVER
 A.buttonLink IMG
 {
 	vertical-align: middle;
+}
+
+#schedulerProperties .schedulerInfoPanel 
+{
+	background: #FFFFFF;
+	margin-bottom: 10px;
+	border: 2px solid #E0E0E0;
+}
+
+#schedulerProperties .schedulerInfoPanel H4
+{
+	padding: 5px;
+	font-weight: normal;
+	background: none repeat scroll 0 0 #E0E0E0;
+}
+
+#schedulerProperties .schedulerInfoPanel TABLE
+{
+	margin: 10px;
 }

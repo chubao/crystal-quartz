@@ -19,13 +19,18 @@ namespace CrystalQuartz.Core
             get
             {
                 var scheduler = _schedulerProvider.Scheduler;
+                var metadata = scheduler.GetMetaData();
                 return new SchedulerData
                            {
                                Name = scheduler.SchedulerName,
                                InstanceId = scheduler.SchedulerInstanceId,
                                JobGroups = GetJobGroups(scheduler),
                                TriggerGroups = GetTriggerGroups(scheduler),
-                               Status = GetSchedulerStatus(scheduler)
+                               Status = GetSchedulerStatus(scheduler),
+                               IsRemote = metadata.SchedulerRemote,
+                               JobsExecuted = metadata.NumJobsExecuted,
+                               RunningSince = metadata.RunningSince,
+                               SchedulerType = metadata.SchedulerType
                            };
             }
         }

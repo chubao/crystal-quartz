@@ -1,5 +1,6 @@
 namespace CrystalQuartz.Core.Domain
 {
+    using System;
     using System.Collections.Generic;
 
     public class SchedulerData
@@ -38,6 +39,14 @@ namespace CrystalQuartz.Core.Domain
 
         public SchedulerStatus Status { get; set; }
 
+        public int JobsTotal { get; set; }
 
+        public int JobsExecuted { get; set; }
+
+        public bool IsRemote { get; set; }
+
+        public Type SchedulerType { get; set; }
+
+        public DateTime? RunningSince { get; set; }
     }
 }
