@@ -10,8 +10,10 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Starting scheduler...");
+
             var properties = new NameValueCollection();
-            properties["quartz.scheduler.instanceName"] = "RemoteServerScheduler";
+            properties["quartz.scheduler.instanceName"] = "RemoteServerSchedulerClient";
 
             // set thread pool info
             properties["quartz.threadPool.type"] = "Quartz.Simpl.SimpleThreadPool, Quartz";
@@ -24,20 +26,26 @@
             properties["quartz.scheduler.exporter.bindName"] = "QuartzScheduler";
             properties["quartz.scheduler.exporter.channelType"] = "tcp";
 
-            ISchedulerFactory sf = new StdSchedulerFactory(properties);
-            IScheduler sched = sf.GetScheduler();
+            var schedulerFactory = new StdSchedulerFactory(properties);
+            var scheduler = schedulerFactory.GetScheduler();
 
             // define the job and ask it to run
-            JobDetail job = new JobDetail("remotelyAddedJob", "default", typeof(NoOpJob));
-            JobDataMap map = new JobDataMap();
-            map.Put("msg", "Your remotely added job has executed!");
-            job.JobDataMap = map;
-            CronTrigger trigger = new CronTrigger("remotelyAddedTrigger", "default", "remotelyAddedJob", "default", DateTime.UtcNow, null, "/5 * * ? * *");
+            var map = new JobDataMap();
+            map.Put("msg", "Some message!");
+
+            var job = new JobDetail("localJob", "default", typeof(NoOpJob))
+                          {
+                              JobDataMap = map
+                          };
+
+            var trigger = new CronTrigger("remotelyAddedTrigger", "default", "localJob", "default", DateTime.UtcNow, null, "/5 * * ? * *");
 
             // schedule the job
-            sched.ScheduleJob(job, trigger);
+            scheduler.ScheduleJob(job, trigger);
 
-            sched.Start();
+            scheduler.Start();
+
+            Console.WriteLine("Scheduler has been started.");
         }
     }
 }
