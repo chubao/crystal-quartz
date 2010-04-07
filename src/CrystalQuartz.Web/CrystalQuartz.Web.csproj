@@ -71,6 +71,7 @@
     <Compile Include="FrontController\ResponseFilling\ViewEngineResponseFiller.cs" />
     <Compile Include="FrontController\ViewRendering\IViewEngine.cs" />
     <Compile Include="FrontController\ViewRendering\VelocityViewEngine.cs" />
+    <Compile Include="Processors\OperationFiller.cs" />
     <Compile Include="Processors\DefaultPageRequestProcessor.cs" />
     <Compile Include="FrontController\FrontControllerHandler.cs" />
     <Compile Include="FrontController\IRequestHandler.cs" />
@@ -79,14 +80,14 @@
     <Compile Include="Processors\HomeFiller.cs" />
     <Compile Include="Processors\JobFiller.cs" />
     <Compile Include="Processors\MasterContentRequestProcessor.cs" />
-    <Compile Include="Processors\PauseGroupFiller.cs" />
-    <Compile Include="Processors\PauseJobFiller.cs" />
-    <Compile Include="Processors\PauseTriggerFiller.cs" />
-    <Compile Include="Processors\ResumeGroupFiller.cs" />
-    <Compile Include="Processors\ResumeJobFiller.cs" />
-    <Compile Include="Processors\ResumeTriggerFiller.cs" />
-    <Compile Include="Processors\StartSchedulerFiller.cs" />
-    <Compile Include="Processors\StopSchedulerFiller.cs" />
+    <Compile Include="Processors\Operations\PauseGroupFiller.cs" />
+    <Compile Include="Processors\Operations\PauseJobFiller.cs" />
+    <Compile Include="Processors\Operations\PauseTriggerFiller.cs" />
+    <Compile Include="Processors\Operations\ResumeGroupFiller.cs" />
+    <Compile Include="Processors\Operations\ResumeJobFiller.cs" />
+    <Compile Include="Processors\Operations\ResumeTriggerFiller.cs" />
+    <Compile Include="Processors\Operations\StartSchedulerFiller.cs" />
+    <Compile Include="Processors\Operations\StopSchedulerFiller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
