@@ -4,6 +4,7 @@ namespace CrystalQuartz.Core
     using System.Collections.Generic;
     using Domain;
     using Quartz;
+    using SchedulerProviders;
 
     public class DefaultSchedulerDataProvider : ISchedulerDataProvider
     {

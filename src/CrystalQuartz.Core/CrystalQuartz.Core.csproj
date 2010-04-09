@@ -66,13 +66,14 @@
     <Compile Include="Domain\SchedulerStatus.cs" />
     <Compile Include="Domain\TriggerGroupData.cs" />
     <Compile Include="ISchedulerDataProvider.cs" />
-    <Compile Include="ISchedulerProvider.cs" />
+    <Compile Include="SchedulerProviders\ISchedulerProvider.cs" />
     <Compile Include="Domain\JobData.cs" />
     <Compile Include="Domain\NamedObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\SchedulerData.cs" />
     <Compile Include="Domain\TriggerData.cs" />
-    <Compile Include="RemoteSchedulerProvider.cs" />
+    <Compile Include="SchedulerProviders\RemoteSchedulerProvider.cs" />
+    <Compile Include="SchedulerProviders\StdSchedulerProvider.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
