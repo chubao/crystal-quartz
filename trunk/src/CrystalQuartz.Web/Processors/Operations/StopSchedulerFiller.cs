@@ -2,6 +2,7 @@ namespace CrystalQuartz.Web.Processors.Operations
 {
     using System.Web;
     using Core;
+    using Core.SchedulerProviders;
 
     public class StopSchedulerFiller : OperationFiller
     {

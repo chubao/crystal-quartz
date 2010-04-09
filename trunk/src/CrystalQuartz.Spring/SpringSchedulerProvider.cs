@@ -1,11 +1,15 @@
 namespace CrystalQuartz.Spring
 {
-    using Core;
+    using Core.SchedulerProviders;
     using global::Spring.Context.Support;
     using Quartz;
 
     public class SpringSchedulerProvider : ISchedulerProvider
     {
+        public void Init()
+        {
+        }
+
         public IScheduler Scheduler
         {
             get

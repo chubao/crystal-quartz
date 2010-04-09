@@ -1,6 +1,7 @@
 namespace CrystalQuartz.Core.Tests
 {
     using Quartz;
+    using SchedulerProviders;
 
     public class SchedulerProviderStub : ISchedulerProvider
     {
@@ -10,6 +11,10 @@ namespace CrystalQuartz.Core.Tests
         }
 
         public SchedulerProviderStub()
+        {
+        }
+
+        public void Init()
         {
         }
 

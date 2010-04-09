@@ -2,6 +2,7 @@ namespace CrystalQuartz.Web
 {
     using System.Collections.Generic;
     using Core;
+    using Core.SchedulerProviders;
     using FrontController;
     using FrontController.RequestMatching;
     using FrontController.ViewRendering;
@@ -21,6 +22,7 @@ namespace CrystalQuartz.Web
             ViewEngine = new VelocityViewEngine();
             ViewEngine.Init();
             SchedulerProvider = Configuration.ConfigUtils.SchedulerProvider;
+            SchedulerProvider.Init();
             SchedulerDataProvider = new DefaultSchedulerDataProvider(SchedulerProvider);
         }
 

@@ -1,6 +1,8 @@
 <Configuration>
   <SettingsComponent>
-    <string />
+    <string>
+      <setting name="TeamCity.Toolbar.Shown">+TeamCity;</setting>
+    </string>
     <integer />
     <boolean>
       <setting name="livetemplates.csharp.usevar">True</setting>
