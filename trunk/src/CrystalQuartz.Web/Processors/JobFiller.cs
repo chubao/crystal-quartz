@@ -1,39 +1,22 @@
 namespace CrystalQuartz.Web.Processors
 {
-    using System.Collections.Generic;
     using Core;
-    using FrontController.ResponseFilling;
+    using FrontController;
     using FrontController.ViewRendering;
 
-    public class JobFiller : ViewEngineResponseFiller
+    public class JobFiller : MasterFiller
     {
-        private readonly ISchedulerDataProvider _schedulerDataProvider;
-
         public JobFiller(IViewEngine viewEngine, ISchedulerDataProvider schedulerDataProvider)
-            : base(viewEngine)
+            : base(viewEngine, schedulerDataProvider)
         {
-            _schedulerDataProvider = schedulerDataProvider;
         }
 
-        protected override IDictionary<string, object> ViewData
+        protected override void FillViewData(ViewData viewData)
         {
-            get
-            {
-                var jobName = Request.Params["job"];
-                var jobGroup = Request.Params["group"];
-
-                return new Dictionary<string, object>
-                             {
-                                 { "data", _schedulerDataProvider.Data },
-                                 { "mainContent", "job" },
-                                 { "jobDetails", _schedulerDataProvider.GetJobDetailsData(jobName, jobGroup) }
-                             };
-            }
-        }
-
-        protected override string ViewName
-        {
-            get { return "master"; }
+            var jobName = Request.Params["job"];
+            var jobGroup = Request.Params["group"];
+            viewData.Data["mainContent"] = "job";
+            viewData.Data["jobDetails"] = _schedulerDataProvider.GetJobDetailsData(jobName, jobGroup);
         }
     }
 }

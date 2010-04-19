@@ -1,6 +1,5 @@
 namespace CrystalQuartz.Web.FrontController.ResponseFilling
 {
-    using System.Collections.Generic;
     using System.Web;
     using ViewRendering;
 
@@ -15,11 +14,10 @@ namespace CrystalQuartz.Web.FrontController.ResponseFilling
 
         protected override void InternalFillResponse(HttpResponseBase response, HttpContextBase context)
         {
-            _viewEngine.RenderView(ViewName, ViewData, response.OutputStream);
+            var viewData = GetViewData();
+            _viewEngine.RenderView(viewData.ViewName, viewData.Data, response.OutputStream);
         }
 
-        protected abstract IDictionary<string, object> ViewData { get; }
-
-        protected abstract string ViewName { get; }
+        protected abstract ViewData GetViewData();
     }
 }
