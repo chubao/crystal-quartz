@@ -6,8 +6,16 @@ namespace CrystalQuartz.Web.Demo
 
     public class FakeProvider : StdSchedulerProvider
     {
+        protected override System.Collections.Specialized.NameValueCollection GetSchedulerProperties()
+        {
+            var properties = base.GetSchedulerProperties();
+            properties.Add("test1", "test1value");
+            return properties;
+        }
+
         protected override void InitScheduler(IScheduler scheduler)
         {
+            
             // construct job info
             JobDetail jobDetail = new JobDetail("myJob", null, typeof(HelloJob));
             // fire every hour

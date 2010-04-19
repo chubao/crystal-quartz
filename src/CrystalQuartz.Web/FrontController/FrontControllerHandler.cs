@@ -1,6 +1,7 @@
 namespace CrystalQuartz.Web.FrontController
 {
     using System.Collections.Generic;
+    using System.Text;
     using System.Web;
 
     /// <summary>
@@ -17,6 +18,8 @@ namespace CrystalQuartz.Web.FrontController
 
         public void ProcessRequest(HttpContext context)
         {
+            context.Response.ContentEncoding = Encoding.UTF8;
+
             var contextWrapper = new HttpContextWrapper(context);
             foreach (var processor in _processors)
             {

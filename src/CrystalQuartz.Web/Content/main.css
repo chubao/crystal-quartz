@@ -17,7 +17,7 @@ A
 	color: #666666;
 }
 
-#mainContent, #mainHeader
+#mainContent, #mainHeader, #mainFooter
 {
 	margin: 0 auto;
 	width: 960px;
@@ -32,6 +32,15 @@ A
 #mainHeader A
 {
 	float: right;
+}
+
+#mainFooter 
+{
+	margin-top: 2em;
+	/*border-top: 2px solid #CCCCCC;*/
+	color: #666666;
+	padding-top: 5px;
+	font: 0.9em;
 }
 
 .simplePanel
@@ -135,6 +144,12 @@ DIV.none
 	padding: 5px;
 }
 
+.groupHeader DIV.status span 
+{
+	float: none;
+	padding: 0 1px 0 0;
+}
+
 /* Lobs Container */
 #jobsContainer
 {
@@ -204,6 +219,11 @@ TABLE.data TD
 {
 	border-top: 1px solid #EEEEEE;
 	border-right: 1px solid #E0E0E0;
+}
+
+TABLE.data TD.last
+{
+	border-right: none;
 }
 
 #schedulerProperties 
@@ -374,4 +394,15 @@ A.buttonLink IMG
 #schedulerProperties .schedulerInfoPanel TABLE
 {
 	margin: 10px;
+}
+
+.error PRE 
+{
+	font-size: 1.3em;
+	color: Red;
+}
+
+.error  
+{
+	padding: 0 1em;
 }

@@ -1,35 +1,19 @@
 namespace CrystalQuartz.Web.Processors
 {
-    using System.Collections.Generic;
     using Core;
-    using FrontController.ResponseFilling;
+    using FrontController;
     using FrontController.ViewRendering;
 
-    public class HomeFiller : ViewEngineResponseFiller
+    public class HomeFiller : MasterFiller
     {
-        private readonly ISchedulerDataProvider _schedulerDataProvider;
-
         public HomeFiller(IViewEngine viewEngine, ISchedulerDataProvider schedulerDataProvider)
-            : base(viewEngine)
+            : base(viewEngine, schedulerDataProvider)
         {
-            _schedulerDataProvider = schedulerDataProvider;
         }
 
-        protected override IDictionary<string, object> ViewData
+        protected override void FillViewData(ViewData viewData)
         {
-            get
-            {
-                return new Dictionary<string, object>
-                             {
-                                 { "data", _schedulerDataProvider.Data },
-                                 { "mainContent", "home" }
-                             };
-            }
-        }
-
-        protected override string ViewName
-        {
-            get { return "master"; }
+            viewData.Data["mainContent"] = "home";
         }
     }
 }

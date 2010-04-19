@@ -69,10 +69,12 @@
     <Compile Include="FrontController\ResponseFilling\DefaultResponseFiller.cs" />
     <Compile Include="FrontController\ResponseFilling\IResponseFiller.cs" />
     <Compile Include="FrontController\ResponseFilling\ViewEngineResponseFiller.cs" />
+    <Compile Include="FrontController\ViewData.cs" />
     <Compile Include="FrontController\ViewRendering\IViewEngine.cs" />
     <Compile Include="FrontController\ViewRendering\VelocityViewEngine.cs" />
+    <Compile Include="Helpers\ExceptionHelper.cs" />
+    <Compile Include="Processors\MasterFiller.cs" />
     <Compile Include="Processors\OperationFiller.cs" />
-    <Compile Include="Processors\DefaultPageRequestProcessor.cs" />
     <Compile Include="FrontController\FrontControllerHandler.cs" />
     <Compile Include="FrontController\IRequestHandler.cs" />
     <Compile Include="PagesHandler.cs" />
@@ -146,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Content\Images\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\error.vm" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

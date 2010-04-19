@@ -6,6 +6,11 @@ namespace CrystalQuartz.Core.SchedulerProviders
     {
         public string SchedulerHost { get; set;}
 
+        protected override bool IsLazy
+        {
+            get { return true; }
+        }
+
         protected override NameValueCollection GetSchedulerProperties()
         {
             var properties = base.GetSchedulerProperties();

@@ -25,6 +25,7 @@
 <html xmlns='http://www.w3.org/1999/xhtml'>
     <head>
         <title>CrystalQuartz Panel</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link href='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.main.css&type=css' rel='stylesheet' type='text/css' />
         <script type='text/javascript'>
 			var timeout	= 500; var closetimer	= 0; var ddmenuitem	= 0;
@@ -65,7 +66,6 @@
             <div id="mainLogo">
 				<h1><a href='/CrystalQuartzPanel.axd'>CrystalQuartz Panel</a></h1>
 			</div>
-            
         </div>
         <div id='mainContent'>
 			<div id='schedulerProperties' class='simplePanel'>
@@ -145,6 +145,10 @@
 				</div>
 			</div>
             #parse("CrystalQuartz.Web.Templates.${mainContent}.vm")
+        </div>
+        
+        <div id="mainFooter">
+			Page generated (UTC): $currentDate
         </div>
     </body>
 </html>
