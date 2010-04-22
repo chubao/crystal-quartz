@@ -12,68 +12,68 @@
   </NAntValidationSettings>
   <RecentFiles>
     <RecentFiles>
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:MasterContentRequestProcessor.cs" caret="814" fromTop="11" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:RequestMatching/f:CatchAllRequestMatcher.cs" caret="81" fromTop="2" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ViewRendering/f:IViewEngine.cs" caret="188" fromTop="7" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ResponseFilling/f:DefaultResponseFiller.cs" caret="89" fromTop="4" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ResponseFilling/f:ViewEngineResponseFiller.cs" caret="757" fromTop="22" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Default.aspx" caret="433" fromTop="11" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Configuration/f:ConfigUtils.cs" caret="672" fromTop="18" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ViewRendering/f:VelocityViewEngine.cs" caret="1139" fromTop="20" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:FileRequestProcessor.cs" caret="503" fromTop="15" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:ICommand.cs" caret="109" fromTop="4" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:DefaultRequestHandler.cs" caret="656" fromTop="22" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:RequestMatching/f:SingleParamRequestMatcher.cs" caret="263" fromTop="10" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:DefaultPageRequestProcessor.cs" caret="455" fromTop="3" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="867" fromTop="23" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:job.vm" caret="383" fromTop="14" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:jobPanel.vm" caret="757" fromTop="12" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:home.vm" caret="927" fromTop="21" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="1240" fromTop="34" />
       <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="8184" fromTop="40" />
       <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:SchedulerData.cs" caret="1144" fromTop="21" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:master.vm" caret="2267" fromTop="7" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="305" fromTop="12" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/f:DefaultSchedulerDataProvider.cs" caret="689" fromTop="21" />
       <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:ISchedulerProvider.cs" caret="421" fromTop="12" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:RemoteSchedulerProvider.cs" caret="154" fromTop="3" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:StdSchedulerProvider.cs" caret="246" fromTop="7" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="111" fromTop="4" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:PagesHandler.cs" caret="814" fromTop="23" />
       <File id="81AF9210-D82B-4E62-8169-CA4E0FD2F6D2/f:SpringSchedulerProvider.cs" caret="353" fromTop="15" />
       <File id="99D49DE4-572E-4F3A-B969-EF6C61870B52/f:SchedulerProviderStub.cs" caret="393" fromTop="18" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:RemoteSchedulerProvider.cs" caret="303" fromTop="9" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/f:DefaultSchedulerDataProvider.cs" caret="179" fromTop="7" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:ViewData.cs" caret="318" fromTop="12" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:DefaultRequestHandler.cs" caret="0" fromTop="0" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ResponseFilling/f:ViewEngineResponseFiller.cs" caret="64" fromTop="1" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:FileRequestProcessor.cs" caret="0" fromTop="0" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:FrontControllerHandler.cs" caret="655" fromTop="20" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:SchedulerProviderException.cs" caret="683" fromTop="18" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Helpers/f:ExceptionHelper.cs" caret="279" fromTop="9" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:job.vm" caret="386" fromTop="13" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ViewRendering/f:VelocityViewEngine.cs" caret="485" fromTop="16" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:error.vm" caret="2252" fromTop="20" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:StdSchedulerProvider.cs" caret="1538" fromTop="36" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="2599" fromTop="44" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:master.vm" caret="4382" fromTop="22" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="130" fromTop="4" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:MasterFiller.cs" caret="300" fromTop="10" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="167" fromTop="5" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="476" fromTop="35" />
     </RecentFiles>
     <RecentEdits>
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="845" fromTop="19" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:master.vm" caret="2267" fromTop="7" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="999" fromTop="26" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="305" fromTop="12" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:ISchedulerProvider.cs" caret="47" fromTop="0" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:RemoteSchedulerProvider.cs" caret="47" fromTop="0" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:ISchedulerProvider.cs" caret="421" fromTop="12" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:RemoteSchedulerProvider.cs" caret="542" fromTop="20" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:StdSchedulerProvider.cs" caret="621" fromTop="14" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:StdSchedulerProvider.cs" caret="821" fromTop="22" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:RemoteSchedulerProvider.cs" caret="169" fromTop="7" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:RemoteSchedulerProvider.cs" caret="513" fromTop="20" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:RemoteSchedulerProvider.cs" caret="363" fromTop="19" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:RemoteSchedulerProvider.cs" caret="229" fromTop="9" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:RemoteSchedulerProvider.cs" caret="95" fromTop="2" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:StdSchedulerProvider.cs" caret="591" fromTop="19" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:StdSchedulerProvider.cs" caret="52" fromTop="1" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="254" fromTop="16" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="2296" fromTop="37" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="254" fromTop="10" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="673" fromTop="18" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="1096" fromTop="27" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="1411" fromTop="24" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="2305" fromTop="27" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="111" fromTop="4" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:PagesHandler.cs" caret="814" fromTop="23" />
-      <File id="81AF9210-D82B-4E62-8169-CA4E0FD2F6D2/f:SpringSchedulerProvider.cs" caret="253" fromTop="10" />
-      <File id="81AF9210-D82B-4E62-8169-CA4E0FD2F6D2/f:SpringSchedulerProvider.cs" caret="44" fromTop="1" />
-      <File id="99D49DE4-572E-4F3A-B969-EF6C61870B52/f:SchedulerProviderStub.cs" caret="382" fromTop="18" />
-      <File id="99D49DE4-572E-4F3A-B969-EF6C61870B52/f:SchedulerProviderStub.cs" caret="56" fromTop="1" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="359" fromTop="29" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:error.vm" caret="2252" fromTop="26" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="2826" fromTop="23" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="2967" fromTop="35" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="2963" fromTop="33" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="539" fromTop="9" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:StdSchedulerProvider.cs" caret="1538" fromTop="36" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="397" fromTop="9" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="2599" fromTop="18" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="1883" fromTop="32" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="355" fromTop="24" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="355" fromTop="28" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="262" fromTop="18" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:master.vm" caret="4382" fromTop="22" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:MasterFiller.cs" caret="646" fromTop="18" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:MasterFiller.cs" caret="235" fromTop="6" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:MasterFiller.cs" caret="892" fromTop="22" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:MasterFiller.cs" caret="1298" fromTop="34" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="174" fromTop="8" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="359" fromTop="12" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="485" fromTop="26" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="359" fromTop="10" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="130" fromTop="4" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="173" fromTop="5" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="445" fromTop="28" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="585" fromTop="30" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="355" fromTop="4" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="182" fromTop="7" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:MasterFiller.cs" caret="300" fromTop="10" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="476" fromTop="35" />
     </RecentEdits>
   </RecentFiles>
   <UnitTestRunner>
@@ -84,42 +84,42 @@
   </UnitTestRunnerMSTest>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="return" priority="50" />
-      <Item value="false" priority="7" />
-      <Item value="bool" priority="7" />
+      <Item value="return" priority="53" />
+      <Item value="false" priority="8" />
+      <Item value="bool" priority="8" />
       <Item value="private" priority="20" />
       <Item value="IRequestProcessor" priority="5" />
       <Item value="_processors" priority="0" />
-      <Item value="if" priority="11" />
+      <Item value="if" priority="14" />
       <Item value="processor" priority="0" />
-      <Item value="var" priority="7" />
-      <Item value="new" priority="30" />
+      <Item value="var" priority="10" />
+      <Item value="new" priority="36" />
       <Item value="HttpContextWrapper" priority="0" />
-      <Item value="context" priority="19" />
+      <Item value="context" priority="20" />
       <Item value="contextWrapper" priority="0" />
       <Item value="FrontControllerHandler" priority="0" />
       <Item value="List&lt;IRequestProcessor&gt;" priority="0" />
-      <Item value="true" priority="10" />
+      <Item value="true" priority="11" />
       <Item value="ContentRequestProcessor" priority="0" />
-      <Item value="throw" priority="0" />
+      <Item value="throw" priority="3" />
       <Item value="SchedulerData" priority="1" />
-      <Item value="Data" priority="0" />
+      <Item value="Data" priority="1" />
       <Item value="ISchedulerDataProvider" priority="2" />
       <Item value="ISchedulerProvider" priority="1" />
       <Item value="_schedulerProvider" priority="3" />
-      <Item value="string" priority="28" />
-      <Item value="public" priority="23" />
+      <Item value="string" priority="32" />
+      <Item value="public" priority="28" />
       <Item value="scheduler" priority="33" />
       <Item value="CrystalQuartz" priority="1" />
       <Item value="Configuration" priority="3" />
-      <Item value="override" priority="8" />
+      <Item value="override" priority="12" />
       <Item value="CrystalQuartzConfigurationGroup" priority="0" />
       <Item value="KeyAttributeName" priority="0" />
       <Item value="_schedulerDataProvider" priority="6" />
-      <Item value="static" priority="8" />
+      <Item value="static" priority="9" />
       <Item value="DataProvider" priority="0" />
       <Item value="_isInitialized" priority="2" />
-      <Item value="null" priority="8" />
+      <Item value="null" priority="13" />
       <Item value="DefaultSchedulerDataProvider" priority="1" />
       <Item value="DefaultPageRequestProcessor" priority="1" />
       <Item value="DependencyResolver" priority="0" />
@@ -158,9 +158,9 @@
       <Item value="Triggers" priority="2" />
       <Item value="triggers" priority="3" />
       <Item value="IScheduler" priority="3" />
-      <Item value="_scheduler" priority="12" />
+      <Item value="_scheduler" priority="14" />
       <Item value="TriggerUtils" priority="0" />
-      <Item value="virtual" priority="4" />
+      <Item value="virtual" priority="5" />
       <Item value="MasterContentRequestProcessor" priority="0" />
       <Item value="builder" priority="4" />
       <Item value="path" priority="1" />
@@ -192,8 +192,8 @@
       <Item value="_mockRepository" priority="1" />
       <Item value="With" priority="0" />
       <Item value="propg" priority="0" />
-      <Item value="protected" priority="2" />
-      <Item value="abstract" priority="0" />
+      <Item value="protected" priority="4" />
+      <Item value="abstract" priority="1" />
       <Item value="InternalInit" priority="0" />
       <Item value="trigger4" priority="0" />
       <Item value="GetActivityStatusSpan" priority="1" />
@@ -216,7 +216,7 @@
       <Item value="ContentType" priority="0" />
       <Item value="int" priority="2" />
       <Item value="StatusCode" priority="0" />
-      <Item value="object" priority="1" />
+      <Item value="object" priority="2" />
       <Item value="IViewEngine" priority="0" />
       <Item value="pair" priority="1" />
       <Item value="_viewEngine" priority="4" />
@@ -224,7 +224,7 @@
       <Item value="VelocityViewEngine" priority="0" />
       <Item value="DefaultResponseFiller" priority="0" />
       <Item value="DefaultRequestHandler" priority="0" />
-      <Item value="Dictionary&lt;string,object&gt;" priority="0" />
+      <Item value="Dictionary&lt;string,object&gt;" priority="1" />
       <Item value="HomeFiller" priority="0" />
       <Item value="ViewEngine" priority="0" />
       <Item value="SchedulerDataProvider" priority="2" />
@@ -241,10 +241,10 @@
       <Item value="_serviceProvider" priority="0" />
       <Item value="SingleParamRequestMatcher" priority="0" />
       <Item value="StartSchedulerFiller" priority="0" />
-      <Item value="ISchedulerProvider`0" priority="1" />
+      <Item value="ISchedulerProvider`0" priority="2" />
       <Item value="IScheduler`0" priority="1" />
       <Item value="RemoteSchedulerProvider`0" priority="0" />
-      <Item value="DateTime`0" priority="0" />
+      <Item value="DateTime`0" priority="1" />
       <Item value="IsRemote" priority="0" />
       <Item value="metadata" priority="3" />
       <Item value="JobsExecuted" priority="0" />
@@ -252,18 +252,43 @@
       <Item value="SchedulerType" priority="0" />
       <Item value="NameValueCollection" priority="0" />
       <Item value="StdSchedulerProvider`0" priority="1" />
-      <Item value="properties" priority="0" />
+      <Item value="properties" priority="5" />
+      <Item value="IsLazy" priority="0" />
+      <Item value="LazyInit`0" priority="0" />
+      <Item value="Exception" priority="1" />
+      <Item value="NameValueCollection`0" priority="1" />
+      <Item value="SchedulerInitialProperties" priority="0" />
+      <Item value="SchedulerProviderException`0" priority="1" />
+      <Item value="try" priority="2" />
+      <Item value="catch" priority="3" />
+      <Item value="Exception`0" priority="1" />
+      <Item value="SchedulerProviderException" priority="0" />
+      <Item value="ex" priority="2" />
+      <Item value="ViewData`0" priority="0" />
+      <Item value="GetViewData`0" priority="0" />
+      <Item value="viewData" priority="3" />
+      <Item value="ViewData" priority="0" />
+      <Item value="e" priority="0" />
+      <Item value="String`0" priority="0" />
+      <Item value="this" priority="1" />
+      <Item value="messageBuilder" priority="1" />
+      <Item value="while" priority="0" />
+      <Item value="currentException" priority="3" />
+      <Item value="exception" priority="0" />
+      <Item value="MasterFiller`0" priority="1" />
+      <Item value="schedulerDataProvider" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:CrystalQuartz.Web.IRequestProcessor">
       <Item value="ProcessRequest" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpContext">
-      <Item value="Response" priority="1" />
+      <Item value="Response" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpResponse">
       <Item value="Status" priority="0" />
       <Item value="StatusCode" priority="0" />
       <Item value="End" priority="0" />
+      <Item value="ContentEncoding" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpContextBase">
       <Item value="Response" priority="8" />
@@ -375,6 +400,8 @@
       <Item value="ToString" priority="1" />
       <Item value="AppendLine" priority="0" />
       <Item value="AppendFormat" priority="1" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="AppendLine`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
       <Item value="Params" priority="1" />
@@ -479,6 +506,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Specialized.NameValueCollection">
       <Item value="Indexer" priority="0" />
+      <Item value="Add`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Quartz.SchedulerMetaData">
       <Item value="SchedulerRemote" priority="0" />
@@ -491,6 +519,26 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:CrystalQuartz.Core.SchedulerProviders.ISchedulerProvider">
       <Item value="Init`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Web.FrontController.ViewData">
+      <Item value="ViewName" priority="0" />
+      <Item value="Data" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Core.SchedulerProviders.SchedulerProviderException">
+      <Item value="Message" priority="0" />
+      <Item value="InnerException" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="UTF8" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Commons.Collections.ExtendedProperties">
+      <Item value="Include" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToUniversalTime`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <UnitTestRunnerNUnit>
