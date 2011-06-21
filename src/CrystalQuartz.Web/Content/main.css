@@ -221,6 +221,11 @@ TABLE.data TD
 	border-right: 1px solid #E0E0E0;
 }
 
+TABLE.data TD.triggerName
+{
+	width: 150px;
+}
+
 TABLE.data TD.last
 {
 	border-right: none;

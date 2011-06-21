@@ -46,6 +46,9 @@ namespace CrystalQuartz.Web
                        new SingleParamRequestMatcher("command", "scheduler-stop"),
                        new StopSchedulerFiller(SchedulerProvider)),
                    new DefaultRequestHandler(
+                       new SingleParamRequestMatcher("command", "job-trigger"),
+                       new TriggerJobOperationFiller(SchedulerProvider)),
+                   new DefaultRequestHandler(
                        new SingleParamRequestMatcher("command", "job-pause"),
                        new PauseJobFiller(SchedulerProvider)),
                    new DefaultRequestHandler(

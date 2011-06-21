@@ -9,7 +9,8 @@
 			#end
 			#if ($job.CanStart)
 				<a href="/CrystalQuartzPanel.axd?command=job-resume&job=${job.Name}&group=${job.GroupName}">Resume all</a>
-			#end
+      #end
+      <a href="/CrystalQuartzPanel.axd?command=job-trigger&job=${job.Name}&group=${job.GroupName}">Execute Now</a>
 			#if (!($job.CanStart || $job.CanPause))
 				<div class='none'>No actions for complete job</div>
 			#end
@@ -36,7 +37,7 @@
 			<div class='none'>No active triggers</div>
 			#each
 			<tr>
-				<td>$trigger.Name</td>
+				<td class='triggerName'>$trigger.Name</td>
 				<td>
 					#statusImage($trigger)
 				</td>
