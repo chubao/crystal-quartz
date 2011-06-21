@@ -111,6 +111,7 @@
     <Compile Include="Processors\Operations\ResumeTriggerFiller.cs" />
     <Compile Include="Processors\Operations\StartSchedulerFiller.cs" />
     <Compile Include="Processors\Operations\StopSchedulerFiller.cs" />
+    <Compile Include="Processors\Operations\TriggerJobOperationFiller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

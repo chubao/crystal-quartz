@@ -7,7 +7,7 @@
 			$group.Name
 			<div class='status'>
 				<span onmouseover="mopen('$group.Name')" onmouseout="mclosetime()">
-					<img style='vertical-align:middle;' alt='Options' src='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.menu.png&type=png'>
+					<img style='vertical-align:middle;' alt='Options' src='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.menu.png&type=png' />
 				</span> |
 				<div id='$group.Name' class='menu' onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 					#if ($group.CanPause)
