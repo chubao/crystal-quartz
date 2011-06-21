@@ -17,11 +17,9 @@
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:RequestMatching/f:SingleParamRequestMatcher.cs" caret="263" fromTop="10" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:jobPanel.vm" caret="757" fromTop="12" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:home.vm" caret="927" fromTop="21" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="8184" fromTop="40" />
       <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:SchedulerData.cs" caret="1144" fromTop="21" />
       <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:ISchedulerProvider.cs" caret="421" fromTop="12" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:PagesHandler.cs" caret="814" fromTop="23" />
-      <File id="81AF9210-D82B-4E62-8169-CA4E0FD2F6D2/f:SpringSchedulerProvider.cs" caret="353" fromTop="15" />
       <File id="99D49DE4-572E-4F3A-B969-EF6C61870B52/f:SchedulerProviderStub.cs" caret="393" fromTop="18" />
       <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:RemoteSchedulerProvider.cs" caret="303" fromTop="9" />
       <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/f:DefaultSchedulerDataProvider.cs" caret="179" fromTop="7" />
@@ -36,12 +34,11 @@
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ViewRendering/f:VelocityViewEngine.cs" caret="485" fromTop="16" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:error.vm" caret="2252" fromTop="20" />
       <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:StdSchedulerProvider.cs" caret="1538" fromTop="36" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="2599" fromTop="44" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:master.vm" caret="4382" fromTop="22" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="130" fromTop="4" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:MasterFiller.cs" caret="300" fromTop="10" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="167" fromTop="5" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="476" fromTop="35" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="476" fromTop="33" />
     </RecentFiles>
     <RecentEdits>
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="359" fromTop="29" />
@@ -49,10 +46,7 @@
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="2826" fromTop="23" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="2967" fromTop="35" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="2963" fromTop="33" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="539" fromTop="9" />
       <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:StdSchedulerProvider.cs" caret="1538" fromTop="36" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="397" fromTop="9" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="2599" fromTop="18" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="1883" fromTop="32" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="355" fromTop="24" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="355" fromTop="28" />
