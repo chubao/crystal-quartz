@@ -1,9 +1,9 @@
 ﻿<div class='job'>
 	<div class='status'>
-		<span onmouseover="mopen('$job.Name')" onmouseout="mclosetime()">
+		<span onmouseover="mopen('$job.UniqueName')" onmouseout="mclosetime()">
 			<img style='vertical-align:middle;' alt='Options' src='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.menu.png&type=png'>
 		</span> |
-		<div id='$job.Name' class='menu' onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<div id='$job.UniqueName' class='menu' onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 			#if ($job.CanPause)
 				<a href="/CrystalQuartzPanel.axd?command=job-pause&job=${job.Name}&group=${job.GroupName}">Pause all</a>
 			#end
