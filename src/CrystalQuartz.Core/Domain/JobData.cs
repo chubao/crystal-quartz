@@ -14,6 +14,14 @@ namespace CrystalQuartz.Core.Domain
 
         public string GroupName { get; private set; }
 
+        public string UniqueName
+        {
+            get
+            {
+                return string.Format("{0}_{1}", GroupName, Name);
+            }
+        }
+
         public bool HaveTriggers
         {
             get
