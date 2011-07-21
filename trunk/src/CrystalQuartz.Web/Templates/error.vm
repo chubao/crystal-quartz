@@ -4,7 +4,7 @@
 #end
 #macro( statusImage $activity )
 	<span class='$activity.Status.ToString().ToLower()'>
-		<img title='Status: $activity.Status' alt='$activity.Status' src='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.status${activity.Status}.png&type=png'>
+		<img title='Status: $activity.Status' alt='$activity.Status' src='CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.status${activity.Status}.png&type=png'>
 	</span>
 #end
 #macro(date $dateObject)
@@ -26,7 +26,7 @@
     <head>
         <title>CrystalQuartz Panel</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link href='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.main.css&type=css' rel='stylesheet' type='text/css' />
+        <link href='CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.main.css&type=css' rel='stylesheet' type='text/css' />
         <script type='text/javascript'>
 			var timeout	= 500; var closetimer	= 0; var ddmenuitem	= 0;
 
@@ -64,7 +64,7 @@
         <div id='mainHeader'>
             <a href='/'>&larr; return to the site</a>
             <div id="mainLogo">
-				<h1><a href='/CrystalQuartzPanel.axd'>CrystalQuartz Panel</a></h1>
+				<h1><a href='CrystalQuartzPanel.axd'>CrystalQuartz Panel</a></h1>
 			</div>
         </div>
         <div id='mainContent'>

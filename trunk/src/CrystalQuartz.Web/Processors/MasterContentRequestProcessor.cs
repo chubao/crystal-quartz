@@ -13,7 +13,7 @@ namespace CrystalQuartz.Web.Processors
 <html xmlns='http://www.w3.org/1999/xhtml'>
     <head>
         <title>{0}</title>
-        <link href='/CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.main.css&type=css' rel='stylesheet' type='text/css' />
+        <link href='CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.main.css&type=css' rel='stylesheet' type='text/css' />
         {1}
     </head>
     <body>
