@@ -9,7 +9,13 @@ echo Building NuGet packages...
 
 copy "..\bin\Release\CrystalQuartz.Core.dll" "..\nuget\simple\lib"
 copy "..\bin\Release\CrystalQuartz.Web.dll" "..\nuget\simple\lib"
+copy "..\bin\Release\CrystalQuartz.Core.dll" "..\nuget\remote\lib"
+copy "..\bin\Release\CrystalQuartz.Web.dll" "..\nuget\remote\lib"
+
 cd "..\nuget\simple"
+nuget pack Package.nuspec -OutputDirectory "..\..\bin\NuGet"
+
+cd "..\..\nuget\remote"
 nuget pack Package.nuspec -OutputDirectory "..\..\bin\NuGet"
 
 pause
