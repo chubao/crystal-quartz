@@ -4,7 +4,6 @@ FOR /F "TOKENS=3" %%A IN ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBu
 
 %MSBuildPath% "../src/CrystalQuartz.sln" /p:Configuration=Release
 
-
 echo Building NuGet packages...
 
 copy "..\bin\Release\CrystalQuartz.Core.dll" "..\nuget\simple\lib"
@@ -17,5 +16,11 @@ nuget pack Package.nuspec -OutputDirectory "..\..\bin\NuGet"
 
 cd "..\..\nuget\remote"
 nuget pack Package.nuspec -OutputDirectory "..\..\bin\NuGet"
+
+cd "..\..\scripts"
+
+echo Packaging examples source...
+rmdir /s /q "..\bin\Examples"
+xcopy "..\examples" "..\bin\Examples" /EXCLUDE:SourceCodeExcludes.txt /s /i
 
 pause
