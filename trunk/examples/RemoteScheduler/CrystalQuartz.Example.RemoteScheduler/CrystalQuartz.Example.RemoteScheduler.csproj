@@ -38,25 +38,23 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\libs\Common.Logging.dll</HintPath>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\libs\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalQuartz.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\bin\Debug\CrystalQuartz.Core.dll</HintPath>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\..\libs\Common.Logging.Log4Net.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalQuartz.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\bin\Debug\CrystalQuartz.Web.dll</HintPath>
+    <Reference Include="CrystalQuartz.Core">
+      <HintPath>..\..\libs\CrystalQuartz.Core.dll</HintPath>
     </Reference>
-    <Reference Include="NVelocity, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\libs\NVelocity\NVelocity.dll</HintPath>
+    <Reference Include="CrystalQuartz.Web">
+      <HintPath>..\..\libs\CrystalQuartz.Web.dll</HintPath>
     </Reference>
-    <Reference Include="Quartz, Version=1.0.2.2, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\libs\Quartz.dll</HintPath>
+    <Reference Include="NVelocity">
+      <HintPath>..\..\libs\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\..\libs\Quartz.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
