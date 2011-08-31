@@ -12,7 +12,6 @@
     <ArtifactsDirectory>$(ProjectDirectory)\bin</ArtifactsDirectory>
     <SolutionRoot>$(ProjectDirectory)\src</SolutionRoot>
     <ExamplesRoot>$(ProjectDirectory)\examples</ExamplesRoot>
-    <ExamplesArtifacts>$(ArtifactsDirectory)\Examples</ExamplesArtifacts>
     <SolutionProjectPath>$(SolutionRoot)\CrystalQuartz.sln</SolutionProjectPath>
     <MSBuildCommunityTasksPath>$(ProjectDirectory)\libs\MSBuild</MSBuildCommunityTasksPath>
     <SvnToolsPath>$(ProjectDirectory)\libs\SVN</SvnToolsPath>
