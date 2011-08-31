@@ -14,7 +14,7 @@
   </Target>
 
   <Target Name="BuildVersion" DependsOnTargets="">
-    <SvnVersion LocalPath="$(SolutionRoot)" ToolPath="$(SvnToolsPath)">
+    <SvnVersion LocalPath="$(ProjectDirectory)" ToolPath="$(SvnToolsPath)">
       <Output TaskParameter="Revision" PropertyName="VersionRevision" />
     </SvnVersion>
     <PropertyGroup>
