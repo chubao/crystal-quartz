@@ -4,7 +4,11 @@
   <PropertyGroup>
   </PropertyGroup>
 
-  <Target Name="BuildSolution">
+  <Target Name="Init">
+    <RemoveDir Directories="$(ArtifactsDirectory)" />
+  </Target>
+  
+  <Target Name="BuildSolution" DependsOnTargets="Init">
     <MSBuild Projects="$(SolutionProjectPath)" Targets="Build">
     </MSBuild>
   </Target>
@@ -47,49 +51,26 @@
       <ExampleSourcesExclude Include="$(ExamplesRoot)\**\obj\**" />
       <ExampleSourcesExclude Include="$(ExamplesRoot)\**\bin\**" />
       <ExampleSourcesExclude Include="$(ExamplesRoot)\**\*.csproj.user" />
+      <ExampleSourcesExclude Include="$(ExamplesRoot)\**\_ReSharper*\**" />
+      <ExampleSourcesExclude Include="$(ExamplesRoot)\**\*.user" />
       
-      <DemoSourcesExclude Include="$(SolutionRoot)\CrystalQuartz.Web.Demo\**\.svn\**" />
-      <DemoSourcesExclude Include="$(SolutionRoot)\CrystalQuartz.Web.Demo\**\obj\**" />
-      <DemoSourcesExclude Include="$(SolutionRoot)\CrystalQuartz.Web.Demo\**\bin\**" />
-      <DemoSourcesExclude Include="$(SolutionRoot)\CrystalQuartz.Web.Demo\**\*.csproj.user" />
+      <ExamplesLibs Include="$(ArtifactsDirectory)\$(Configuration)\*.dll" />
+      
+    </ItemGroup>
 
+    <Copy
+        SourceFiles="@(ExamplesLibs)"
+        DestinationFiles="@(ExamplesLibs->'$(ExamplesRoot)\libs\%(RecursiveDir)%(Filename)%(Extension)')" />
+    
+    <ItemGroup>
       <ExamplesFiles Include="$(ExamplesRoot)\**\*.*" Exclude="@(ExampleSourcesExclude)"/>
     </ItemGroup>
 
-    
-    
-    <PropertyGroup>
-      <DeploymentPackagePath>$(ProjectDirectory)\Artifacts\DeploymentPackage_$(Version)</DeploymentPackagePath>
-      <DeploymentPackageWebFilesPath>$(DeploymentPackagePath)\Files\Web</DeploymentPackageWebFilesPath>
-      <DeploymentPackageServiceFilesPath>$(DeploymentPackagePath)\Files\WindowsService</DeploymentPackageServiceFilesPath>
-      <DeploymentPackageSetupPath>$(DeploymentPackagePath)\Setup</DeploymentPackageSetupPath>
-      <DeploymentPackageToolsPath>$(DeploymentPackagePath)\Tools</DeploymentPackageToolsPath>
-    </PropertyGroup>
-
-    <RemoveDir
-        Directories="$(ExamplesArtifacts)" />
-
-    <Copy
-        SourceFiles="@(ExamplesFiles)"
-        DestinationFiles="@(ExamplesFiles->'$(ExamplesArtifacts)\%(RecursiveDir)%(Filename)%(Extension)')" />
-
-    <ItemGroup>
-      <ZipFilesExampleRemote Include="$(ExamplesArtifacts)\RemoteScheduler\**\*.*" />
-      <ZipFilesWebDemo Include="$(SolutionRoot)\CrystalQuartz.Web.Demo\**\*.*" Exclude="@(DemoSourcesExclude)" />
-    </ItemGroup>
-
-    <Zip Files="@(ZipFilesExampleRemote)"
-        WorkingDirectory="$(ExamplesArtifacts)\RemoteScheduler"
-        ZipFileName="$(ExamplesArtifacts)\CrystalQuartz.Examples.RemoteScheduler.$(Version).zip"
+    <Zip Files="@(ExamplesFiles)"
+        WorkingDirectory="$(ExamplesRoot)"
+        ZipFileName="$(ArtifactsDirectory)\CrystalQuartz.Examples.$(Version).zip"
         ZipLevel="9" />
     
-    <Zip Files="@(ZipFilesWebDemo)"
-        WorkingDirectory="$(SolutionRoot)\CrystalQuartz.Web.Demo"
-        ZipFileName="$(ExamplesArtifacts)\CrystalQuartz.Examples.Simple.$(Version).zip"
-        ZipLevel="9" />
-
-    <RemoveDir
-        Directories="$(ExamplesArtifacts)\RemoteScheduler" />
   </Target>
 
   <Target Name="BuildBinaryPacks" DependsOnTargets="BuildVersion">
