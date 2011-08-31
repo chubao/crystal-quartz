@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalQuartz.Web", "Crysta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalQuartz.Web.Demo", "CrystalQuartz.Web.Demo\CrystalQuartz.Web.Demo.csproj", "{E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "`", "CrystalQuartz.Core.Tests\`.csproj", "{99D49DE4-572E-4F3A-B969-EF6C61870B52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalQuartz.Core.Tests", "CrystalQuartz.Core.Tests\CrystalQuartz.Core.Tests.csproj", "{99D49DE4-572E-4F3A-B969-EF6C61870B52}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalQuartz.Spring", "CrystalQuartz.Spring\CrystalQuartz.Spring.csproj", "{81AF9210-D82B-4E62-8169-CA4E0FD2F6D2}"
 EndProject
