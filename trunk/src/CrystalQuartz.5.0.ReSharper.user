@@ -34,11 +34,11 @@
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ViewRendering/f:VelocityViewEngine.cs" caret="485" fromTop="16" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:error.vm" caret="2252" fromTop="20" />
       <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:SchedulerProviders/f:StdSchedulerProvider.cs" caret="1538" fromTop="36" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:master.vm" caret="4382" fromTop="22" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="130" fromTop="4" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:MasterFiller.cs" caret="300" fromTop="10" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="167" fromTop="5" />
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="476" fromTop="33" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:master.vm" caret="0" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
       <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="359" fromTop="29" />
