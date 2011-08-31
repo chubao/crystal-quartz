@@ -12,67 +12,217 @@
   <NAntValidationSettings>
     <NAntPath value="" />
   </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="if" priority="5" />
+      <Item value="scheduler" priority="3" />
+      <Item value="return" priority="10" />
+      <Item value="true" priority="1" />
+      <Item value="public" priority="15" />
+      <Item value="bool" priority="2" />
+      <Item value="Status" priority="6" />
+      <Item value="ActivityStatus" priority="10" />
+      <Item value="var" priority="5" />
+      <Item value="response" priority="1" />
+      <Item value="context" priority="2" />
+      <Item value="jobName" priority="1" />
+      <Item value="jobGroup" priority="1" />
+      <Item value="ResumeJobFiller" priority="0" />
+      <Item value="trigger" priority="0" />
+      <Item value="PauseGroupFiller" priority="0" />
+      <Item value="ResumeGroupFiller" priority="0" />
+      <Item value="MockSupportTests" priority="0" />
+      <Item value="Test" priority="5" />
+      <Item value="void" priority="5" />
+      <Item value="Assert" priority="3" />
+      <Item value="new" priority="8" />
+      <Item value="private" priority="1" />
+      <Item value="Activity" priority="5" />
+      <Item value="status" priority="2" />
+      <Item value="CreateActivity" priority="0" />
+      <Item value="SchedulerStatus" priority="1" />
+      <Item value="false" priority="1" />
+      <Item value="DefaultDataProviderTestsBase" priority="1" />
+      <Item value="_scheduler" priority="1" />
+      <Item value="s" priority="0" />
+      <Item value="Verify" priority="0" />
+      <Item value="_provider" priority="0" />
+      <Item value="DefaultDataProviderTests" priority="0" />
+      <Item value="GetTriggerGroupStatusTests" priority="0" />
+      <Item value="group" priority="5" />
+      <Item value="virtual" priority="0" />
+      <Item value="override" priority="0" />
+      <Item value="protected" priority="1" />
+      <Item value="abstract" priority="0" />
+      <Item value="T" priority="0" />
+      <Item value="ChildrenActivities" priority="1" />
+      <Item value="a" priority="1" />
+      <Item value="where" priority="0" />
+      <Item value="else" priority="2" />
+      <Item value="JobData" priority="2" />
+      <Item value="Jobs" priority="0" />
+      <Item value="TriggerData" priority="2" />
+      <Item value="Triggers" priority="1" />
+      <Item value="groupData" priority="0" />
+      <Item value="jobData" priority="0" />
+      <Item value="internal" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="ActivityNodeTests" priority="0" />
+      <Item value="null" priority="3" />
+      <Item value="activityNode" priority="1" />
+      <Item value="List&lt;Activity&gt;" priority="0" />
+      <Item value="ActivityNode" priority="0" />
+      <Item value="data" priority="0" />
+      <Item value="string" priority="4" />
+      <Item value="InstanceId" priority="0" />
+      <Item value="HttpRequestBase" priority="0" />
+      <Item value="Request" priority="2" />
+      <Item value="JobDetailsData" priority="1" />
+      <Item value="GetJobs" priority="0" />
+      <Item value="GetJobData" priority="0" />
+      <Item value="_schedulerProvider" priority="1" />
+      <Item value="name" priority="1" />
+      <Item value="_schedulerDataProvider" priority="0" />
+      <Item value="ViewEngine" priority="0" />
+      <Item value="SchedulerDataProvider" priority="0" />
+      <Item value="object" priority="1" />
+      <Item value="JobDetailsMap" priority="0" />
+      <Item value="Dictionary&lt;object,object&gt;" priority="0" />
+      <Item value="groupName" priority="0" />
+      <Item value="job" priority="3" />
+      <Item value="detailsData" priority="1" />
+      <Item value="map" priority="0" />
+      <Item value="key" priority="2" />
+      <Item value="jobDetail4" priority="0" />
+      <Item value="GroupName" priority="0" />
+      <Item value="IDictionary" priority="0" />
+      <Item value="JobProperties" priority="0" />
+      <Item value="Dictionary&lt;string,object&gt;" priority="0" />
+      <Item value="OperationFiller" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Quartz.IScheduler">
+      <Item value="IsShutdown" priority="2" />
+      <Item value="PauseJob" priority="0" />
+      <Item value="ResumeJob" priority="0" />
+      <Item value="PauseTrigger" priority="0" />
+      <Item value="ResumeTrigger" priority="0" />
+      <Item value="PauseJobGroup" priority="0" />
+      <Item value="ResumeJobGroup" priority="0" />
+      <Item value="IsTriggerGroupPaused" priority="0" />
+      <Item value="SchedulerInstanceId" priority="0" />
+      <Item value="GetJobDetail" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CrystalQuartz.Core.Domain.SchedulerStatus">
+      <Item value="Shutdown" priority="3" />
+      <Item value="Started" priority="2" />
+      <Item value="NotStarted" priority="4" />
+      <Item value="Empty" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CrystalQuartz.Core.Domain.ActivityStatus">
+      <Item value="Paused" priority="5" />
+      <Item value="Active" priority="13" />
+      <Item value="Mixed" priority="4" />
+      <Item value="Complete" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpContextBase">
+      <Item value="Request" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
+      <Item value="Params" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="That" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.Activity">
+      <Item value="CanStart" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.SyntaxHelpers.Is">
+      <Item value="False" priority="2" />
+      <Item value="EqualTo" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.SchedulerData">
+      <Item value="CanStart" priority="0" />
+      <Item value="CanShutdown" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CrystalQuartz.Core.DefaultSchedulerDataProvider">
+      <Item value="GetTriggerGroupStatus" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rhino.Mocks.Interfaces.IMethodOptions`1">
+      <Item value="Return" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:T">
+      <Item value="Status" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.JobGroupData">
+      <Item value="Init" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.JobData">
+      <Item value="Init" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Core.Tests.Domain.ActivityNodeTests+FakeActivityNode">
+      <Item value="Init" priority="0" />
+      <Item value="Status" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.TriggerGroupData">
+      <Item value="Init" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Core.ISchedulerProvider">
+      <Item value="Scheduler" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Core.ISchedulerDataProvider">
+      <Item value="GetJobDetailsData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Quartz.JobDetail">
+      <Item value="JobDataMap" priority="2" />
+      <Item value="JobType" priority="0" />
+      <Item value="Description" priority="0" />
+      <Item value="FullName" priority="0" />
+      <Item value="Durable" priority="0" />
+      <Item value="Volatile" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.JobDetailsData">
+      <Item value="JobDetailsMap" priority="0" />
+      <Item value="JobProperties" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IDictionary`2">
+      <Item value="Add" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Quartz.JobDataMap">
+      <Item value="Keys" priority="0" />
+      <Item value="Add" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:JobData.cs" caret="499" fromTop="17" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/f:ISchedulerProvider.cs" caret="75" fromTop="4" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:MasterContentRequestProcessor.cs" caret="814" fromTop="11" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:IRequestProcessor.cs" caret="141" fromTop="6" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:IRequestMatcher.cs" caret="43" fromTop="0" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:RequestMatching/f:CatchAllRequestMatcher.cs" caret="81" fromTop="2" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:IResponseProcessor.cs" caret="123" fromTop="4" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ViewRendering/f:IViewEngine.cs" caret="188" fromTop="7" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:FrontControllerHandler.cs" caret="1034" fromTop="36" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ResponseFilling/f:DefaultResponseFiller.cs" caret="89" fromTop="4" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ResponseFilling/f:ViewEngineResponseFiller.cs" caret="757" fromTop="22" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="663" fromTop="21" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Default.aspx" caret="433" fromTop="11" />
-      <File id="81AF9210-D82B-4E62-8169-CA4E0FD2F6D2/f:SpringSchedulerProvider.cs" caret="282" fromTop="12" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="2479" fromTop="21" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Configuration/f:ConfigUtils.cs" caret="636" fromTop="18" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ViewRendering/f:VelocityViewEngine.cs" caret="1139" fromTop="20" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:FileRequestProcessor.cs" caret="503" fromTop="15" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="1045" fromTop="27" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:ICommand.cs" caret="109" fromTop="4" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:DefaultRequestHandler.cs" caret="656" fromTop="22" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:RequestMatching/f:SingleParamRequestMatcher.cs" caret="263" fromTop="10" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="490" fromTop="9" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:SchedulerData.cs" caret="320" fromTop="14" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:home.vm" caret="1572" fromTop="27" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:StartSchedulerProcessor.cs" caret="617" fromTop="18" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:DefaultPageRequestProcessor.cs" caret="455" fromTop="3" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:PagesHandler.cs" caret="1507" fromTop="39" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/f:DefaultSchedulerDataProvider.cs" caret="3872" fromTop="17" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ResponseFilling/f:ViewEngineResponseFiller.cs" caret="180" fromTop="6" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ResponseFilling/f:DefaultResponseFiller.cs" caret="657" fromTop="24" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/f:ISchedulerDataProvider.cs" caret="292" fromTop="11" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:PagesHandler.cs" caret="1511" fromTop="18" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:ViewRendering/f:VelocityViewEngine.cs" caret="1043" fromTop="32" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:FileRequestProcessor.cs" caret="1331" fromTop="26" />
+      <File id="99D49DE4-572E-4F3A-B969-EF6C61870B52/d:Domain/f:SchedulerDataTests.cs" caret="1035" fromTop="26" />
+      <File id="99D49DE4-572E-4F3A-B969-EF6C61870B52/d:Domain/f:ActivityNodeTests.cs" caret="537" fromTop="11" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:JobData.cs" caret="310" fromTop="9" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:ActivityNode.cs" caret="453" fromTop="17" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:JobDetailsData.cs" caret="288" fromTop="9" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/f:DefaultSchedulerDataProvider.cs" caret="2068" fromTop="25" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:job.vm" caret="125" fromTop="3" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:home.vm" caret="0" fromTop="0" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:SchedulerStatus.cs" caret="105" fromTop="5" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="2943" fromTop="16" />
+      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:SchedulerData.cs" caret="414" fromTop="17" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/d:Operations/f:StopSchedulerFiller.cs" caret="94" fromTop="4" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="2315" fromTop="55" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:DefaultPageRequestProcessor.cs" caret="0" fromTop="0" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:JobFiller.cs" caret="0" fromTop="0" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:HomeFiller.cs" caret="0" fromTop="0" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:master.vm" caret="4324" fromTop="44" />
     </RecentFiles>
     <RecentEdits>
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:home.vm" caret="361" fromTop="6" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:home.vm" caret="2063" fromTop="18" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:home.vm" caret="2670" fromTop="22" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Content/f:main.css" caret="1044" fromTop="27" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:ICommand.cs" caret="109" fromTop="4" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:DefaultRequestHandler.cs" caret="656" fromTop="16" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/f:DefaultRequestHandler.cs" caret="789" fromTop="22" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:RequestMatching/f:SingleParamRequestMatcher.cs" caret="577" fromTop="20" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:RequestMatching/f:SingleParamRequestMatcher.cs" caret="684" fromTop="25" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:RequestMatching/f:SingleParamRequestMatcher.cs" caret="81" fromTop="2" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:RequestMatching/f:SingleParamRequestMatcher.cs" caret="243" fromTop="8" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:FrontController/d:RequestMatching/f:SingleParamRequestMatcher.cs" caret="353" fromTop="8" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:StartSchedulerProcessor.cs" caret="304" fromTop="10" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:StartSchedulerProcessor.cs" caret="354" fromTop="13" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:StartSchedulerProcessor.cs" caret="528" fromTop="18" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:StartSchedulerProcessor.cs" caret="52" fromTop="2" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:StartSchedulerProcessor.cs" caret="254" fromTop="8" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:PagesHandler.cs" caret="797" fromTop="12" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:PagesHandler.cs" caret="498" fromTop="8" />
-      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:FakeProvider.cs" caret="490" fromTop="9" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Processors/f:StartSchedulerProcessor.cs" caret="592" fromTop="18" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:SchedulerData.cs" caret="518" fromTop="16" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/d:Domain/f:SchedulerData.cs" caret="320" fromTop="14" />
-      <File id="9382E234-40E3-40D1-9A6F-5EF63CF09C90/f:DefaultSchedulerDataProvider.cs" caret="801" fromTop="19" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:home.vm" caret="1572" fromTop="27" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:home.vm" caret="1678" fromTop="27" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:PagesHandler.cs" caret="1093" fromTop="26" />
-      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/f:PagesHandler.cs" caret="1507" fromTop="32" />
+      <File id="DAD3549E-FC6D-4420-B391-CE923A3CAD30/d:Templates/f:master.vm" caret="4324" fromTop="36" />
     </RecentEdits>
   </RecentFiles>
   <UnitTestRunner>
@@ -81,390 +231,4 @@
   <UnitTestRunnerMSTest>
     <UseTestRunConfigFromMetadataFile>False</UseTestRunConfigFromMetadataFile>
   </UnitTestRunnerMSTest>
-  <CompletionStatisticsManager>
-    <ItemStatistics item="Default">
-      <Item value="return" priority="46" />
-      <Item value="false" priority="7" />
-      <Item value="bool" priority="6" />
-      <Item value="private" priority="19" />
-      <Item value="IRequestProcessor" priority="5" />
-      <Item value="_processors" priority="0" />
-      <Item value="if" priority="10" />
-      <Item value="processor" priority="0" />
-      <Item value="var" priority="6" />
-      <Item value="new" priority="29" />
-      <Item value="HttpContextWrapper" priority="0" />
-      <Item value="context" priority="19" />
-      <Item value="contextWrapper" priority="0" />
-      <Item value="FrontControllerHandler" priority="0" />
-      <Item value="List&lt;IRequestProcessor&gt;" priority="0" />
-      <Item value="true" priority="10" />
-      <Item value="ContentRequestProcessor" priority="0" />
-      <Item value="throw" priority="0" />
-      <Item value="SchedulerData" priority="1" />
-      <Item value="Data" priority="0" />
-      <Item value="ISchedulerDataProvider" priority="2" />
-      <Item value="ISchedulerProvider" priority="1" />
-      <Item value="_schedulerProvider" priority="3" />
-      <Item value="string" priority="28" />
-      <Item value="public" priority="19" />
-      <Item value="scheduler" priority="26" />
-      <Item value="CrystalQuartz" priority="1" />
-      <Item value="Configuration" priority="3" />
-      <Item value="override" priority="5" />
-      <Item value="CrystalQuartzConfigurationGroup" priority="0" />
-      <Item value="KeyAttributeName" priority="0" />
-      <Item value="_schedulerDataProvider" priority="6" />
-      <Item value="static" priority="7" />
-      <Item value="DataProvider" priority="0" />
-      <Item value="_isInitialized" priority="2" />
-      <Item value="null" priority="7" />
-      <Item value="DefaultSchedulerDataProvider" priority="1" />
-      <Item value="DefaultPageRequestProcessor" priority="1" />
-      <Item value="DependencyResolver" priority="0" />
-      <Item value="SingleTagSectionHandler" priority="0" />
-      <Item value="SchedulerProvider" priority="1" />
-      <Item value="ProviderSectionHandler" priority="0" />
-      <Item value="ConfigUtils" priority="0" />
-      <Item value="DictionarySectionHandler" priority="0" />
-      <Item value="section" priority="2" />
-      <Item value="typeof" priority="0" />
-      <Item value="Activator" priority="0" />
-      <Item value="type" priority="3" />
-      <Item value="provider" priority="2" />
-      <Item value="Console" priority="0" />
-      <Item value="sched" priority="4" />
-      <Item value="GroupData" priority="1" />
-      <Item value="Groups" priority="0" />
-      <Item value="List" priority="0" />
-      <Item value="result" priority="6" />
-      <Item value="groupName" priority="8" />
-      <Item value="data" priority="10" />
-      <Item value="group" priority="5" />
-      <Item value="JobData" priority="2" />
-      <Item value="IList" priority="1" />
-      <Item value="Jobs" priority="0" />
-      <Item value="jobs" priority="0" />
-      <Item value="jobName" priority="4" />
-      <Item value="job" priority="4" />
-      <Item value="NamedObject" priority="4" />
-      <Item value="base" priority="1" />
-      <Item value="name" priority="2" />
-      <Item value="TriggerGroupData" priority="2" />
-      <Item value="TriggerGroups" priority="0" />
-      <Item value="TriggerData" priority="3" />
-      <Item value="trigger" priority="15" />
-      <Item value="Triggers" priority="2" />
-      <Item value="triggers" priority="3" />
-      <Item value="IScheduler" priority="3" />
-      <Item value="_scheduler" priority="8" />
-      <Item value="TriggerUtils" priority="0" />
-      <Item value="virtual" priority="3" />
-      <Item value="MasterContentRequestProcessor" priority="0" />
-      <Item value="builder" priority="4" />
-      <Item value="path" priority="1" />
-      <Item value="WriteResourceToStream" priority="0" />
-      <Item value="FileRequestProcessor" priority="0" />
-      <Item value="switch" priority="1" />
-      <Item value="default" priority="0" />
-      <Item value="case" priority="0" />
-      <Item value="SchedulerStatus" priority="4" />
-      <Item value="Status" priority="2" />
-      <Item value="else" priority="1" />
-      <Item value="StringBuilder" priority="0" />
-      <Item value="trigger3" priority="0" />
-      <Item value="const" priority="0" />
-      <Item value="SPAN_NONE" priority="1" />
-      <Item value="jobDetail4" priority="1" />
-      <Item value="Length" priority="1" />
-      <Item value="ActivityStatus" priority="11" />
-      <Item value="status" priority="7" />
-      <Item value="Activity" priority="3" />
-      <Item value="void" priority="7" />
-      <Item value="s" priority="0" />
-      <Item value="MockRepository" priority="2" />
-      <Item value="Mocker" priority="1" />
-      <Item value="DefaultSchedulerDataProviderTests" priority="0" />
-      <Item value="_provider" priority="2" />
-      <Item value="SchedulerProviderStub" priority="0" />
-      <Item value="Assert" priority="0" />
-      <Item value="_mockRepository" priority="1" />
-      <Item value="With" priority="0" />
-      <Item value="propg" priority="0" />
-      <Item value="protected" priority="1" />
-      <Item value="abstract" priority="0" />
-      <Item value="InternalInit" priority="0" />
-      <Item value="trigger4" priority="0" />
-      <Item value="GetActivityStatusSpan" priority="1" />
-      <Item value="TriggerState" priority="0" />
-      <Item value="GetTriggerStatus" priority="2" />
-      <Item value="t" priority="0" />
-      <Item value="jobDetail" priority="0" />
-      <Item value="vcontext" priority="1" />
-      <Item value="IRequestHandler" priority="0" />
-      <Item value="IRequestMatcher" priority="2" />
-      <Item value="IResponseProcessor" priority="0" />
-      <Item value="_responseProcessor" priority="0" />
-      <Item value="_matcher" priority="0" />
-      <Item value="_responseFiller" priority="0" />
-      <Item value="responseBase" priority="0" />
-      <Item value="HttpContextBase" priority="0" />
-      <Item value="contextBase" priority="0" />
-      <Item value="IResponseFiller" priority="0" />
-      <Item value="response" priority="4" />
-      <Item value="ContentType" priority="0" />
-      <Item value="int" priority="0" />
-      <Item value="StatusCode" priority="0" />
-      <Item value="object" priority="1" />
-      <Item value="IViewEngine" priority="0" />
-      <Item value="pair" priority="1" />
-      <Item value="_viewEngine" priority="4" />
-      <Item value="PagesHandler" priority="0" />
-      <Item value="VelocityViewEngine" priority="0" />
-      <Item value="DefaultResponseFiller" priority="0" />
-      <Item value="DefaultRequestHandler" priority="0" />
-      <Item value="Dictionary&lt;string,object&gt;" priority="0" />
-      <Item value="HomeFiller" priority="0" />
-      <Item value="ViewEngine" priority="0" />
-      <Item value="SchedulerDataProvider" priority="2" />
-      <Item value="readonly" priority="0" />
-      <Item value="property" priority="3" />
-      <Item value="ICommand" priority="0" />
-      <Item value="Command" priority="1" />
-      <Item value="request" priority="1" />
-      <Item value="_parameter" priority="0" />
-      <Item value="value" priority="0" />
-      <Item value="_value" priority="0" />
-      <Item value="IServiceProvider" priority="0" />
-      <Item value="ServiceProvider" priority="0" />
-      <Item value="_serviceProvider" priority="0" />
-      <Item value="SingleParamRequestMatcher" priority="0" />
-      <Item value="StartSchedulerFiller" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Web.IRequestProcessor">
-      <Item value="ProcessRequest" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Web.HttpContext">
-      <Item value="Response" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Web.HttpResponse">
-      <Item value="Status" priority="0" />
-      <Item value="StatusCode" priority="0" />
-      <Item value="End" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Web.HttpContextBase">
-      <Item value="Response" priority="8" />
-      <Item value="Request" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Web.HttpResponseBase">
-      <Item value="Write" priority="3" />
-      <Item value="WriteFile" priority="0" />
-      <Item value="OutputStream" priority="2" />
-      <Item value="ContentType" priority="1" />
-      <Item value="StatusCode" priority="0" />
-      <Item value="Redirect" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.ISchedulerProvider">
-      <Item value="Scheduler" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:Quartz.IScheduler">
-      <Item value="SchedulerName" priority="0" />
-      <Item value="IsStarted" priority="2" />
-      <Item value="GetJobNames" priority="1" />
-      <Item value="JobGroupNames" priority="3" />
-      <Item value="TriggerGroupNames" priority="1" />
-      <Item value="GetTriggersOfJob" priority="1" />
-      <Item value="IsShutdown" priority="2" />
-      <Item value="Expect" priority="0" />
-      <Item value="PauseJob" priority="0" />
-      <Item value="PauseJobGroup" priority="0" />
-      <Item value="IsJobGroupPaused" priority="0" />
-      <Item value="GetTriggerState" priority="0" />
-      <Item value="IsTriggerGroupPaused" priority="0" />
-      <Item value="PauseTrigger" priority="0" />
-      <Item value="Start" priority="0" />
-      <Item value="Shutdown" priority="0" />
-      <Item value="Standby" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.ISchedulerDataProvider">
-      <Item value="Data" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.SchedulerData">
-      <Item value="Name" priority="0" />
-      <Item value="Groups" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@System.Web.Configuration.WebConfigurationManager">
-      <Item value="GetSection" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@CrystalQuartz.Web.Configuration.ConfigUtils">
-      <Item value="SchedulerProvider" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@System.Type">
-      <Item value="GetType" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Object">
-      <Item value="ToString" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@System.Activator">
-      <Item value="CreateInstance" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@System.Console">
-      <Item value="WriteLine" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
-      <Item value="Add" priority="2" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@System.String">
-      <Item value="Format" priority="3" />
-      <Item value="Empty" priority="3" />
-      <Item value="IsNullOrEmpty" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.GroupData">
-      <Item value="Name" priority="0" />
-      <Item value="Jobs" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:Quartz.Trigger">
-      <Item value="Name" priority="2" />
-      <Item value="StartTimeUtc" priority="0" />
-      <Item value="EndTimeUtc" priority="0" />
-      <Item value="GetNextFireTimeUtc" priority="0" />
-      <Item value="JobName" priority="0" />
-      <Item value="GetPreviousFireTimeUtc" priority="0" />
-      <Item value="Group" priority="2" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.JobData">
-      <Item value="Triggers" priority="0" />
-      <Item value="HaveTriggers" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.TriggerData">
-      <Item value="StartDate" priority="1" />
-      <Item value="EndDate" priority="2" />
-      <Item value="NextFireDate" priority="1" />
-      <Item value="PrevFireDate" priority="0" />
-      <Item value="PreviousFireDate" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Nullable`1">
-      <Item value="ToString" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@Quartz.TriggerUtils">
-      <Item value="MakeMinutelyTrigger" priority="0" />
-      <Item value="MakeSecondlyTrigger" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.SchedulerData">
-      <Item value="JobGroups" priority="1" />
-      <Item value="IsStarted" priority="1" />
-      <Item value="Name" priority="0" />
-      <Item value="Status" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Text.StringBuilder">
-      <Item value="Append" priority="3" />
-      <Item value="ToString" priority="1" />
-      <Item value="AppendLine" priority="0" />
-      <Item value="AppendFormat" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
-      <Item value="Params" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@CrystalQuartz.Core.Domain.SchedulerStatus">
-      <Item value="Stopped" priority="2" />
-      <Item value="Empty" priority="1" />
-      <Item value="Started" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.String">
-      <Item value="ToLower" priority="2" />
-      <Item value="GetType" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.SchedulerStatus">
-      <Item value="ToString" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
-      <Item value="Count" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.JobGroupData">
-      <Item value="Name" priority="0" />
-      <Item value="Status" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:Quartz.JobDetail">
-      <Item value="Group" priority="1" />
-      <Item value="Durable" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@Rhino.Mocks.MockRepository">
-      <Item value="GenerateStub" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:Rhino.Mocks.Interfaces.IMethodOptions`1">
-      <Item value="Return" priority="0" />
-      <Item value="Repeat" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@Rhino.Mocks.Mocker">
-      <Item value="Current" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:Rhino.Mocks.MockRepository">
-      <Item value="ReplayAll" priority="0" />
-      <Item value="VerifyAll" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.DefaultSchedulerDataProvider">
-      <Item value="GetSchedulerStatus" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
-      <Item value="That" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@NUnit.Framework.SyntaxHelpers.Is">
-      <Item value="EqualTo" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@Rhino.Mocks.With">
-      <Item value="Mocks" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:Rhino.Mocks.With+FluentMocker">
-      <Item value="Verify" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:Rhino.Mocks.Interfaces.IRepeat`1">
-      <Item value="Any" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@CrystalQuartz.Core.Domain.ActivityStatus">
-      <Item value="Active" priority="2" />
-      <Item value="Paused" priority="3" />
-      <Item value="Complete" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Core.Domain.ActivityStatus">
-      <Item value="ToString" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:NVelocity.VelocityContext">
-      <Item value="Put" priority="1" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Web.FrontController.IRequestMatcher">
-      <Item value="CanProcessRequest" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Web.FrontController.IResponseProcessor">
-      <Item value="FillResponse" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
-      <Item value="Key" priority="0" />
-      <Item value="Value" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Web.FrontController.ViewRendering.IViewEngine">
-      <Item value="Init" priority="0" />
-      <Item value="RenderView" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Collections.Hashtable">
-      <Item value="Keys" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Type">
-      <Item value="GetProperty" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Reflection.PropertyInfo">
-      <Item value="SetValue" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:@Spring.Context.Support.ContextRegistry">
-      <Item value="GetContext" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:Spring.Context.IApplicationContext">
-      <Item value="GetObject" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:CrystalQuartz.Web.FrontController.ICommand">
-      <Item value="Execute" priority="0" />
-    </ItemStatistics>
-    <ItemStatistics item="Qualified:System.Collections.Specialized.NameValueCollection">
-      <Item value="Indexer" priority="0" />
-    </ItemStatistics>
-  </CompletionStatisticsManager>
 </Configuration>
