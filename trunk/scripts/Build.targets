@@ -53,6 +53,7 @@
       <ExampleSourcesExclude Include="$(ExamplesRoot)\**\*.csproj.user" />
       <ExampleSourcesExclude Include="$(ExamplesRoot)\**\_ReSharper*\**" />
       <ExampleSourcesExclude Include="$(ExamplesRoot)\**\*.user" />
+      <ExampleSourcesExclude Include="$(ExamplesRoot)\**\*.suo" />
       
       <ExamplesLibs Include="$(ArtifactsDirectory)\$(Configuration)\*.dll" />
       

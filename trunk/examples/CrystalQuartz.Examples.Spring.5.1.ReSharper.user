@@ -1,0 +1,55 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="ContextHandler`0" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="context" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Spring.Context.Support.ContextRegistry">
+      <Item value="GetContext`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Spring.Context.IApplicationContext">
+      <Item value="GetObject`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="1636" fromTop="26" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Global.asax.cs" caret="188" fromTop="9" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="2134" fromTop="8" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="2134" fromTop="14" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="2045" fromTop="26" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="1410" fromTop="21" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="1358" fromTop="16" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="1348" fromTop="14" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="471" fromTop="9" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="944" fromTop="18" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="1636" fromTop="20" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Web.config" caret="1760" fromTop="26" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Global.asax.cs" caret="13" fromTop="0" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Global.asax.cs" caret="680" fromTop="23" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Global.asax.cs" caret="725" fromTop="22" />
+      <File id="E2DDBC63-3540-4D6C-9D4E-9BAC19E9CCEC/f:Global.asax.cs" caret="188" fromTop="9" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
