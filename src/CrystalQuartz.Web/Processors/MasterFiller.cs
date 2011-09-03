@@ -9,11 +9,16 @@ namespace CrystalQuartz.Web.Processors
 
     public abstract class MasterFiller : ViewEngineResponseFiller
     {
-        protected readonly ISchedulerDataProvider _schedulerDataProvider;
+        private readonly ISchedulerDataProvider _schedulerDataProvider;
 
         protected MasterFiller(IViewEngine viewEngine, ISchedulerDataProvider schedulerDataProvider) : base(viewEngine)
         {
             _schedulerDataProvider = schedulerDataProvider;
+        }
+
+        protected ISchedulerDataProvider SchedulerDataProvider
+        {
+            get { return _schedulerDataProvider; }
         }
 
         protected override ViewData GetViewData()

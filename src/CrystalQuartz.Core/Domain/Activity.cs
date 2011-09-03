@@ -30,5 +30,13 @@ namespace CrystalQuartz.Core.Domain
                 return Status == ActivityStatus.Active || Status == ActivityStatus.Mixed;
             }
         }
+
+        public bool CanExecuteNow
+        {
+            get
+            {
+                return true;
+            }
+        }
     }
 }
