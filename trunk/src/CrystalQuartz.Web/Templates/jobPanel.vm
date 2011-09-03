@@ -1,7 +1,7 @@
 ﻿<div class='job'>
 	<div class='status'>
 		<span onmouseover="mopen('$job.UniqueName')" onmouseout="mclosetime()">
-			<img style='vertical-align:middle;' alt='Options' src='CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.menu.png&type=png'>
+			<img style='vertical-align:middle;' alt='Options' src='CrystalQuartzPanel.axd?file=CrystalQuartz.Web.Content.Images.menu.png&type=png' />
 		</span> |
 		<div id='$job.UniqueName' class='menu' onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 			#if ($job.CanPause)
@@ -10,9 +10,11 @@
 			#if ($job.CanStart)
 				<a href="CrystalQuartzPanel.axd?command=job-resume&job=${job.Name}&group=${job.GroupName}">Resume all</a>
       #end
-      <a href="CrystalQuartzPanel.axd?command=job-trigger&job=${job.Name}&group=${job.GroupName}">Execute Now</a>
-			#if (!($job.CanStart || $job.CanPause))
-				<div class='none'>No actions for complete job</div>
+      #if ($job.CanExecuteNow)
+        <a href="CrystalQuartzPanel.axd?command=job-trigger&job=${job.Name}&group=${job.GroupName}">Execute Now</a>
+      #end
+      #if (!($job.CanStart || $job.CanPause || $job.CanExecuteNow))
+      <div class='none'>No actions for complete job</div>
 			#end
 		</div>
 		#statusImage($job)

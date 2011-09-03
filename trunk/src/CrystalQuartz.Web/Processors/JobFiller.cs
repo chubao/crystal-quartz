@@ -16,7 +16,7 @@ namespace CrystalQuartz.Web.Processors
             var jobName = Request.Params["job"];
             var jobGroup = Request.Params["group"];
             viewData.Data["mainContent"] = "job";
-            viewData.Data["jobDetails"] = _schedulerDataProvider.GetJobDetailsData(jobName, jobGroup);
+            viewData.Data["jobDetails"] = SchedulerDataProvider.GetJobDetailsData(jobName, jobGroup);
         }
     }
 }
