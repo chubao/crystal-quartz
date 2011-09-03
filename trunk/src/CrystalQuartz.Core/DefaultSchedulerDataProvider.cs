@@ -70,6 +70,11 @@ namespace CrystalQuartz.Core
             return detailsData;
         }
 
+        public IEnumerable<ActivityEvent> GetJobEvents(string name, DateTime minDateUtc, DateTime maxDateUtc)
+        {
+            return new List<ActivityEvent>();
+        }
+
         public SchedulerStatus GetSchedulerStatus(IScheduler scheduler)
         {
             if (scheduler.IsShutdown)
