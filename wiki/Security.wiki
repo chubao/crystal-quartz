@@ -1,9 +1,7 @@
 #labels Featured
-#Security.
+= Securing Crystal Quartz pages =
 
-= Securing CrystalQuartz pages =
-
-It is a common practice to restrice access to the CrystalQuartz panel in the production mode. If you are using standard ASP.NET security mechanism then you can reach this by adding the following rows to the web.config file:
+It is a common practice to restrice access to the Crystal Quartz Panel in the production mode. If you are using standard ASP.NET security mechanism then you can reach this by adding the following rows to the web.config file:
 
 {{{
 <location path="CrystalQuartzPanel.axd">  
