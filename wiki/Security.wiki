@@ -1,0 +1,16 @@
+#labels Featured
+#Security.
+
+= Securing CrystalQuartz pages =
+
+It is a common practice to restrice access to the CrystalQuartz panel in the production mode. If you are using standard ASP.NET security mechanism then you can reach this by adding the following rows to the web.config file:
+
+{{{
+<location path="CrystalQuartzPanel.axd">  
+    <system.web>  
+        <authorization>  
+            <deny users="?" />  
+        </authorization>  
+    </system.web>  
+</location>  
+}}}
